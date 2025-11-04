@@ -1,4 +1,4 @@
-
-<div class="post istop">
-	<h2 class="post-title">[置顶]<a title="<?php  echo $article->Title;  ?>" href="<?php  echo $article->Url;  ?>"><?php  echo $article->Title;  ?></a></h2>
+<?php  /* Template Name:列表页单条置顶文章 */  ?>
+<div class="post istop-post">
+	<h2 class="post-title"><!--[<?php  echo $lang['msg']['top'];  ?>]--><a href="<?php  echo $article->Url;  ?>"><?php  echo $article->Title;  ?></a></h2>
 </div>

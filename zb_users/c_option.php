@@ -8,7 +8,7 @@ return array (
   'ZC_MYSQL_PASSWORD' => '123456',
   'ZC_MYSQL_NAME' => 'test_first',
   'ZC_MYSQL_CHARSET' => 'utf8mb4',
-  'ZC_MYSQL_COLLATE' => 'utf8mb4_general_ci',
+  'ZC_MYSQL_COLLATE' => 'utf8mb4_unicode_ci',
   'ZC_MYSQL_PRE' => 'zbp_',
   'ZC_MYSQL_ENGINE' => 'MyISAM',
   'ZC_MYSQL_PORT' => '3306',
@@ -22,3 +22,4 @@ return array (
   'ZC_PGSQL_PORT' => '5432',
   'ZC_PGSQL_PERSISTENT' => false,
 );
+

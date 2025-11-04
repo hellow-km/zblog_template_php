@@ -118,8 +118,8 @@ return array(
     'ZC_MANAGE_ORDER' => 'log_PostTime',
     
     // 登录相关
-    'ZC_LOGIN_CSRFCHECK_ENABLE' => true,
-    'ZC_LOGIN_VERIFY_ENABLE'    => true,
+    'ZC_LOGIN_CSRFCHECK_ENABLE' => false,
+    'ZC_LOGIN_VERIFY_ENABLE'    => false,
 
     // '表情相关
     'ZC_EMOTICONS_FILENAME' => 'face',

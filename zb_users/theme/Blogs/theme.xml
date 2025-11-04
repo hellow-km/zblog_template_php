@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>Blogs</id>
+<name>免费博客主题Blogs</name>
+<url>https://app.zblogcn.com/?id=1405</url>
+<note>12种布局的免费响应式博客主题</note>
+<description>这款zblogPHP免费响应式博客主题Blogs，之所以命名为Blogs，是因为这款主题专门为博客设计的，没有其他CMS杂志布局和图片布局，是一款纯粹的博客主题。它是从Nana主题的博客布局演变而言，首页、文章列表页共分为4种布局，侧边栏共分为3种布局，组合起来就有12种布局，希望有一种布局是你所喜欢的。</description>
+<path>main.php</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>懿古今</name>
+  <email>yigujin@qq.com</email>
+  <url>https://www.yigujin.cn/</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>151740</adapted>
+<version>2</version>
+<pubdate>2017-07-01</pubdate>
+<modified>2019-07-03</modified>
+<price>0</price>
+<phpver>5.2</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+</sidebars>
+</theme>

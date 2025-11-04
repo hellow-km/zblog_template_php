@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>Timeline</id>
+<name>Timeline时间轴</name>
+<url>http://www.yiwuku.com/a/19927.html</url>
+<note>简约时间轴自适应一键调色</note>
+<description>一款时间轴风格自适应主题，设置一个主色调即可呈现多色层次感，支持滚动页面动态显示内容</description>
+<path></path>
+<include></include>
+<level>1</level>
+<author>
+  <name>尔今</name>
+  <email>erx@qq.com</email>
+  <url>http://www.yiwuku.com/</url>
+</author>
+<source>
+  <name>尔今</name>
+  <email>erx@qq.com</email>
+  <url>http://www.yiwuku.com/</url>
+</source>
+<adapted>151603</adapted>
+<version>1.1</version>
+<pubdate>2017-12-27</pubdate>
+<modified>2018-01-13</modified>
+<price>0</price>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+</sidebars>
+</theme>
