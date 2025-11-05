@@ -1,0 +1,52 @@
+.AI-chat-btn{
+    position: fixed;
+    right: 100px;
+    bottom:  20px;
+}
+.AI-chat-btn button{
+    width: 80px;
+    height: 60px;
+    background-color: aqua;
+}
+
+.AI-chat-btn .AI-chat-panel{
+    display: none;
+    position: absolute;
+    right: 100px;
+    bottom:  90px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+}
+
+.AI-chat-btn .active{
+    display: block;
+}
+
+.AI-chat-panel h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.AI-chat-panel .panel-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.AI-chat-panel .panel-footer .footer-ipt{
+    width: 80%;
+    height: 30px;
+    margin: 2px;
+}
+
+.AI-chat-panel .panel-footer .footer-send{
+    height: 34px;
+}
