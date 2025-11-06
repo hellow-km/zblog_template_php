@@ -13,7 +13,19 @@
         <el-button :disabled="sendBtnDisbled" type="primary" class='footer-send prm-btn' @click='sendMsg'>{{sendBtnText}}</el-button>
     </div>
 </div>
-      <div class="chat-video" v-show="type=='video'">
+<div class="chat-content chat-document" v-show="type=='document'">
+    <div style="margin: 10px 0;">
+        <span>关键词：</span> <el-input v-model="sendStrDocument" type="textarea"  type='text' placeholder='请输入内容...'/>
+    </div>
+       
+        <div>
+            <el-button :disabled="sendBtnDisbledDocument" type="primary" class='footer-send prm-btn' @click='sendMsgDocument'>{{sendBtnTextDocument}}</el-button>
+        </div>
+        <div>
+          <span>预览</span> <pre id="chat-document-preview_--_"></pre>
+        </div>
+</div>
+      <div class="chat-content chat-video" v-show="type=='video'">
         video
       </div>
     </div>
@@ -32,10 +44,22 @@
     padding:10px;
     box-sizing:border-box;
 }
+.chat-content{
+    padding: 10px;
+}
 .page-panel-footer{
   display: flex;
 }
-
+#chat-document-preview_--_{
+    white-space: break-spaces;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 300px;
+    max-height: 600px;
+    overflow-y: auto;
+    width: 800px;
+}
 .AI-chat-panel_g{
     display: none;
     position: absolute;

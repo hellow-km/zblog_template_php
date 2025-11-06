@@ -60,12 +60,16 @@ var app = new Vue({
   data: {
     leftBarData:[
         {name:'文本对话',type:'text',icon:"el-icon-document"},
+         {name:'文章生成',type:'document',icon:"el-icon-document"},
         {name:'视频生成',type:'video',icon:"el-icon-video-camera"}
     ],
     type:"text",
     sendStr:"",
+    sendStrDocument:"",
     sendBtnText:"发送",
+    sendBtnTextDocument:"生成",
     sendBtnDisbled:false,
+    sendBtnDisbledDocument:false,
     messageList:[]
   },
   created(){
@@ -128,6 +132,38 @@ var app = new Vue({
         }
 
         document.querySelector('#panel-messages_-').appendChild(messageBox);
+    },
+    sendMsgDocument(){
+
+      var userInput = this.sendStrDocument;
+        if (userInput.trim() === '') {
+            alert('请输入内容');
+            return;
+        }
+        this.sendBtnTextDocument="正在思考中...";
+        this.sendBtnDisbledDocument=true;
+        this.appendMessage(userInput, 'user');
+        //this.sendStrDocument = '';
+
+        fetch('zb_system/admin/chat_document.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'msg=' + encodeURIComponent(userInput)
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector('#chat-document-preview_--_').textContent = data.reply ?? 'AI未返回内容';
+        })
+        .catch(err => {
+            document.querySelector('#chat-document-preview_--_').textContent = '请求失败，请稍后再试。';
+        })
+        .finally(() => {
+            this.sendBtnTextDocument="生成";
+            this.sendBtnDisbledDocument=false;
+        });
+      
     }
   }
 })
