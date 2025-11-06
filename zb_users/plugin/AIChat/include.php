@@ -1,25 +1,90 @@
 <?php
 
-$api_key = "你的APIKey";
-$url = "https://api.deepseek.com/v1/chat/completions";
 
-$data = [
-    "model" => "deepseek-chat",
-    "messages" => [
-        ["role" => "user", "content" => "你好，帮我写一首诗。"]
-    ]
-];
 
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    "Content-Type: application/json",
-    "Authorization: Bearer $api_key"
-]);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+$btnText="AI聊天";
+echo '<link href="'.$zbp->host.'zb_users/plugin/AIChat/default.css?v=1.0" rel="stylesheet">'."\r\n";
+$htmlStr="<div class='AI-chat-btn'>
+<div class='AI-chat-panel'>
+    <h3>聊天室</h3>
+    <div class='panel-messages'>
+        <div class='message title-message'>欢迎使用AI聊天功能！</div>
+    </div>
+    <div class='panel-footer'>
+        <input class='footer-ipt' type='text' placeholder='请输入内容...'/>
+        <button class='footer-send prm-btn' onclick='sendMsg()'>发送</button>
+    </div>
+</div>
+<button class='prm-btn toggle-btn' onclick='onclickChatBtn()'>"
+. $btnText .
+"</button>
+</div>";
 
-$response = curl_exec($ch);
-curl_close($ch);
+echo $htmlStr;
 
-echo $response;
+echo "
+<script>
+    function onclickChatBtn() {
+        $('.AI-chat-panel').toggleClass('active');
+    }
+
+    function sendMsg() {
+        var userInput = document.querySelector('.footer-ipt').value;
+        if (userInput.trim() === '') {
+            alert('请输入内容');
+            return;
+        }
+
+        appendMessage(userInput, 'user'); 
+        document.querySelector('.footer-ipt').value = '';
+        toggleSendBtn(true);
+
+        fetch('".$zbp->host."zb_system/admin/chat.php', {   // ✅ 修复这里
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'msg=' + encodeURIComponent(userInput)
+        })
+        .then(response => response.json())
+        .then(data => {
+            appendMessage(data.reply ?? 'AI未返回内容', 'ai');
+        })
+        .catch(err => {
+            appendMessage('请求失败，请稍后再试。', 'ai');
+        })
+        .finally(() => {
+            toggleSendBtn(false);
+        });
+    }
+
+    function toggleSendBtn(flag) {
+        const btn = document.querySelector('.footer-send');
+        btn.disabled = flag;
+        btn.textContent = flag ? '思考中...' : '发送';
+    }
+
+    function appendMessage(message, sender) {
+        var messageBox = document.createElement('div');
+        Object.assign(messageBox.style, {display: 'flex', alignItems: 'center', marginBottom: '10px'}); //
+        let img=document.createElement('img');
+        img.width=30;
+        img.height=30;
+        img.className='avatar-icon';
+        img.src='".$zbp->host."zb_users/plugin/AIChat/' + (sender === 'user' ? 'user-icon.png' : 'ai-icon.png');
+
+        var messageDiv = document.createElement('div');
+        messageDiv.className = sender === 'user' ? 'message user-message' : 'message ai-message';
+        messageDiv.textContent = message;
+        if(sender === 'user'){
+            messageBox.appendChild(messageDiv);
+            messageBox.appendChild(img);
+        } else {
+            messageBox.appendChild(img);
+            messageBox.appendChild(messageDiv);
+        }
+      
+        document.querySelector('.panel-messages').appendChild(messageBox);
+    }
+</script>
+";
