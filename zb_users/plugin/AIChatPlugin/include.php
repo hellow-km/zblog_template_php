@@ -3,9 +3,9 @@
 
 
 $btnText="AI聊天";
-echo '<link href="'.$zbp->host.'zb_users/plugin/AIChat/default.css?v=1.0" rel="stylesheet">'."\r\n";
+echo '<link href="'.$zbp->host.'zb_users/plugin/AIChatPlugin/default.css?v=1.0" rel="stylesheet">'."\r\n";
 $htmlStr="<div class='AI-chat-btn'>
-<div class='AI-chat-panel'>
+<div class='AI-chat-panel_g'>
     <h3>聊天室</h3>
     <div class='panel-messages'>
         <div class='message title-message'>欢迎使用AI聊天功能！</div>
@@ -25,7 +25,8 @@ echo $htmlStr;
 echo "
 <script>
     function onclickChatBtn() {
-        $('.AI-chat-panel').toggleClass('active');
+    console.log( $('.AI-chat-panel_g'))
+        $('.AI-chat-panel_g').toggleClass('active');
     }
 
     function sendMsg() {
@@ -71,7 +72,7 @@ echo "
         img.width=30;
         img.height=30;
         img.className='avatar-icon';
-        img.src='".$zbp->host."zb_users/plugin/AIChat/' + (sender === 'user' ? 'user-icon.png' : 'ai-icon.png');
+        img.src='".$zbp->host."zb_users/plugin/AIChatPlugin/' + (sender === 'user' ? 'user-icon.png' : 'ai-icon.png');
 
         var messageDiv = document.createElement('div');
         messageDiv.className = sender === 'user' ? 'message user-message' : 'message ai-message';

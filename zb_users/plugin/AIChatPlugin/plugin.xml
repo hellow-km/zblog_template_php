@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin version="php">
-<id>AIChat</id>
-<name>AIChat</name>
+<id>AIChatPlugin</id>
+<name>AIChatPlugin</name>
 <url>http://www.tusay.net/</url>
 <note>AI对话</note>
 <description>AI对话</description>

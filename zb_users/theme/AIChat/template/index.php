@@ -113,7 +113,7 @@ var app = new Vue({
         img.width=30;
         img.height=30;
         img.className='avatar-icon';
-        img.src='<?php echo $zbp->host; ?>zb_users/plugin/AIChat/' + (sender === 'user' ? 'user-icon.png' : 'ai-icon.png');
+        img.src='<?php echo $zbp->host; ?>zb_users/theme/AIChat/' + (sender === 'user' ? 'user-icon.png' : 'ai-icon.png');
 
         var messageDiv = document.createElement('div');
         messageDiv.className = sender === 'user' ? 'message user-message' : 'message ai-message';
