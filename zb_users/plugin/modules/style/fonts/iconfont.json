@@ -1,0 +1,107 @@
+{
+  "id": "4797967",
+  "name": "侧栏模块",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8106295",
+      "name": "problem",
+      "font_class": "problem",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "8106263",
+      "name": "history",
+      "font_class": "history",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "339640",
+      "name": "微信",
+      "font_class": "icon1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1214787",
+      "name": "创建群组",
+      "font_class": "weibiaoti1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "1327494",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1327499",
+      "name": "sina",
+      "font_class": "sina",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "5374381",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "8106285",
+      "name": "eye_protection",
+      "font_class": "eye_protection",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "8106287",
+      "name": "voice",
+      "font_class": "voice",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "8106288",
+      "name": "nickname",
+      "font_class": "nickname",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "10678440",
+      "name": "instruction",
+      "font_class": "instruction",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "13314189",
+      "name": "icon_sign_email",
+      "font_class": "icon_sign_email",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "14759626",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "18166694",
+      "name": "抖音",
+      "font_class": "douyin",
+      "unicode": "e8db",
+      "unicode_decimal": 59611
+    }
+  ]
+}

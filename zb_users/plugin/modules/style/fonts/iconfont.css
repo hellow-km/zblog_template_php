@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4797967 */
+  src: url('iconfont.woff2?t=1735603672196') format('woff2'),
+       url('iconfont.woff?t=1735603672196') format('woff'),
+       url('iconfont.ttf?t=1735603672196') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-problem:before {
+  content: "\e6ab";
+}
+
+.icon-history:before {
+  content: "\e69c";
+}
+
+.icon-icon1:before {
+  content: "\e610";
+}
+
+.icon-weibiaoti1:before {
+  content: "\e604";
+}
+
+.icon-QQ:before {
+  content: "\e60f";
+}
+
+.icon-sina:before {
+  content: "\e612";
+}
+
+.icon-dianhua:before {
+  content: "\e64b";
+}
+
+.icon-eye_protection:before {
+  content: "\e6a7";
+}
+
+.icon-voice:before {
+  content: "\e6a8";
+}
+
+.icon-nickname:before {
+  content: "\e6a9";
+}
+
+.icon-instruction:before {
+  content: "\e6e2";
+}
+
+.icon-icon_sign_email:before {
+  content: "\e617";
+}
+
+.icon-kefu:before {
+  content: "\e607";
+}
+
+.icon-douyin:before {
+  content: "\e8db";
+}
+

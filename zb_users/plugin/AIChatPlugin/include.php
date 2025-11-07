@@ -1,10 +1,23 @@
 <?php
+RegisterPlugin("AIChatPlugin","ActivePlugin_AIChat");
+$model=$zbp->Config('AIChatPlugin')->use_model;
 
+function UpdatePlugin_AIChatPlugin()
+{
+    global $zbp;
+	$model=$zbp->Config('AIChatPlugin')->use_model;
+}
+
+function InstallPlugin_AIChatPlugin() {
+  
+}
 
 
 $btnText="AI聊天";
 echo '<link href="'.$zbp->host.'zb_users/plugin/AIChatPlugin/default.css?v=1.0" rel="stylesheet">'."\r\n";
-$htmlStr="<div class='AI-chat-btn'>
+$htmlStr="<div class='AI-chat-btn' style='display:" . 
+    ($zbp->Config('AIChatPlugin')->show_enable == '1' ? "block" : "none") . 
+"'>
 <div class='AI-chat-panel_g'>
     <h3>聊天室</h3>
     <div class='panel-messages'>
@@ -21,11 +34,9 @@ $htmlStr="<div class='AI-chat-btn'>
 </div>";
 
 echo $htmlStr;
-
 echo "
 <script>
     function onclickChatBtn() {
-    console.log( $('.AI-chat-panel_g'))
         $('.AI-chat-panel_g').toggleClass('active');
     }
 
@@ -40,12 +51,12 @@ echo "
         document.querySelector('.footer-ipt').value = '';
         toggleSendBtn(true);
 
-        fetch('".$zbp->host."zb_system/admin/chat.php', {   // ✅ 修复这里
+        fetch('".$zbp->host."zb_users/plugin/AIChatPlugin/chat_plugin.php', {   
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: 'msg=' + encodeURIComponent(userInput)
+            body: 'msg=' + encodeURIComponent(userInput)+'&model=".$model."'
         })
         .then(response => response.json())
         .then(data => {

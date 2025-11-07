@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="php">
+<id>modules</id>
+<name>高级侧栏</name>
+<url>https://www.toyean.com/post/modules.html</url>
+<note>插件自带8个侧栏模块，支持缩略图显示、站长简介、自定义样式等功能</note>
+<description>插件自带8个侧栏模块[推荐阅读、站长简介、热评文章、最新文章、最新评论、读者墙、最近评论、热门阅读]，支持缩略图显示、站长简介、自定义样式等功能。</description>
+<path>main.php?act=base</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>toyean</name>
+  <email>toyean@qq.com</email>
+  <url>https://www.toyean.com/</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>173000</adapted>
+<version>1.0</version>
+<pubdate>2025-01-01</pubdate>
+<modified>2025-01-01</modified>
+<price>0</price>
+<phpver>5.3</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</plugin>
