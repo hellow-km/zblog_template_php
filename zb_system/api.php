@@ -12,6 +12,7 @@ define('ZBP_IN_API', true);
 
 require 'function/c_system_base.php';
 
+$zbp->option['ZC_API_ENABLE'] = true;
 $zbp->Load();
 
 ApiCheckEnable();

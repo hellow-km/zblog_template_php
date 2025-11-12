@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>zbpblueblog</id>
+<name>博客主题blueblog</name>
+<url>https://www.boke8.net/zblog-php-blueblog.html</url>
+<note>简约zblog php博客主题</note>
+<description>简约素的zblog php博客主题，主题整体比较简单，简单的色彩搭配，两栏布局结构。</description>
+<path>main.php?act=config</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>博客吧</name>
+  <email></email>
+  <url>https://www.boke8.net</url>
+</author>
+<source>
+  <name>博客吧</name>
+  <email></email>
+  <url>https://www.boke8.net</url>
+</source>
+<adapted>172900</adapted>
+<version>1.5.1</version>
+<pubdate>2016-05-23</pubdate>
+<modified>2025-04-11</modified>
+<price>0</price>
+<phpver>5.6</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</theme>

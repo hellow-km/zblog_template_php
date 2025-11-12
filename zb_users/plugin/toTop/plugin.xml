@@ -5,11 +5,11 @@
 <url></url>
 <note></note>
 <description></description>
-<path>main.php</path>
+<path>page/info.php</path>
 <include>include.php</include>
 <level>1</level>
 <author>
-  <name>hzh</name>
+  <name>黄志豪</name>
   <email>null@null.com</email>
   <url></url>
 </author>

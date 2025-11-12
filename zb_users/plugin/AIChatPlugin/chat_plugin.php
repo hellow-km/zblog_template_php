@@ -26,7 +26,7 @@ function AI_Chat($msg,$model){
     return file_get_contents($url, false, $context);
 }
 
-function outputText($text,$model){
+function getCateGoryData($text,$model){
     $chatRes = AI_Chat($text,$model);
 
     if (!$chatRes) {
@@ -40,8 +40,9 @@ function outputText($text,$model){
 
 $msg = $_POST['msg'] ?? '';
 $model=$_POST['model'] ?? '';
-$reply = outputText($msg,$model);
+$reply = getCateGoryData($msg,$model);
 
 echo json_encode([
     "reply" => $reply
 ], JSON_UNESCAPED_UNICODE);
+exit;
