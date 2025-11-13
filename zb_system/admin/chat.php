@@ -6,7 +6,7 @@ function AI_Chat($msg){
     $api_key = "sk-isirpewzrwokmjzhsechkzfpzdfzuibxkjoagyxecugwbaru";
 
     $data = [
-        "model" => "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+        "model" => "Qwen/Qwen2.5-7B-Instruct",
         "messages" => [
             ["role" => "user", "content" => $msg]
         ]
@@ -25,7 +25,7 @@ function AI_Chat($msg){
     return file_get_contents($url, false, $context);
 }
 
-function getCateGoryData($text){
+function getData($text){
     $chatRes = AI_Chat($text);
 
     if (!$chatRes) {
@@ -39,7 +39,7 @@ function getCateGoryData($text){
 
 $msg = $_POST['msg'] ?? '';
 
-$reply = getCateGoryData($msg);
+$reply = getData($msg);
 
 // ✅ 关键：返回 JSON 给前端
 echo json_encode([

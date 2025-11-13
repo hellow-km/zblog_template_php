@@ -1,0 +1,17 @@
+.page-pagebar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-content {
+    position: relative;
+    flex: 1;
+    height: calc(100% - 80px);
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+    max-width: 960px;
+    padding-top: 30px;
+}

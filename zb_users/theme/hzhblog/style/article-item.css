@@ -31,6 +31,8 @@
     margin-left: auto;
     margin-right: 10px;
     color: #555666;
+    font-size: 14px;
+    white-space: nowrap;
 }
 .acticle-list-item .acticle-item-info .info-content {
     margin: 5px 0;

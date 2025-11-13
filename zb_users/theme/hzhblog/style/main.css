@@ -1,7 +1,10 @@
 @import url("article-item.css");
 @import url("header.css");
+@import url("content.css");
 @import url("sidebar.css");
 @import url("AI.css");
+@import url("common.css");
+@import url("commit.css");
 @import url("page-detail.css");
 
 * {
@@ -41,22 +44,8 @@ li {
 }
 
 .page-main {
-    display: flex;
     width: 100%;
     height: calc(100vh - 140px);
-    overflow: hidden;
-    overflow-y: auto;
-}
-
-.page-content {
-    position: relative;
-    flex: 1;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    width: 960px;
-    max-width: 960px;
-    padding-top: 30px;
 }
 
 .page-footer {
@@ -68,6 +57,9 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
 }
 .navbar-item {
     margin: 0 5px;

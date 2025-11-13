@@ -8,7 +8,7 @@
 
 
 <body>
-    <div id="app">
+    <div id="app1">
         <div class="page">
             {php}
             $pathname = $_SERVER['REQUEST_URI'];
@@ -42,12 +42,16 @@
 
                     {/foreach}
                 </div>
+                <div class="page-pagebar">{template:pagebar}</div>
                 <div class="page-side2">{template:sidebar2}</div>
+
                 {/if}
             </div>
             <div class="page-footer">{template:footer}</div>
         </div>
     </div>
 </body>
+
+
 
 </html>

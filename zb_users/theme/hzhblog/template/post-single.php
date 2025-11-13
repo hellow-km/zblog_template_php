@@ -34,7 +34,7 @@
         </div>
         <div class="detail-info-tags">
             {if count($article.Tags)>0}标签:{foreach $article.Tags as $i => $tag}
-            &nbsp;<a href='{$tag.Url}' title='{$tag.Name}'>{$tag.Name}</a>&nbsp;
+            &nbsp;<a href='{$tag.Url}' style="color: #357abd;" title='{$tag.Name}'>{$tag.Name}</a>&nbsp;
             {if count($article.Tags) >$i}
             <small>,</small>
             {/if}

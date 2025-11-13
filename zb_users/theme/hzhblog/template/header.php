@@ -12,7 +12,6 @@
 <link rel="stylesheet" rev="stylesheet" href="{$host}zb_users/theme/{$theme}/style/content.css?{$themeinfo['modified']}"
     type="text/css" media="all" />
 
-
 <script src="{$host}zb_system/script/jquery-latest.min.js?v={$version}"></script>
 
 <script src="{$host}zb_system/script/zblogphp.js?v={$version}"></script>
@@ -21,6 +20,18 @@
 </script>
 
 <script src="{$host}zb_users/theme/{$theme}/script/navAnim.js?v={$version}" type="module"></script>
+
+<script src="{$host}zb_system/script/vue.min.js?v={$version}"></script>
+
+<link rel="stylesheet" rev="stylesheet"
+    href="{$host}zb_users/theme/{$theme}/style/elementUI.css?{$themeinfo['modified']}" type="text/css" media="all" />
+
+<link rel="stylesheet" rev="stylesheet"
+    href="{$host}zb_users/theme/{$theme}/fonts/element-icons.woff?{$themeinfo['modified']}" type="text/css"
+    media="all" />
+
+<script src="{$host}zb_users/theme/{$theme}/script/elementUI.js"></script>
+
 
 {$header}
 {if $type=='index'&&$page=='1'&&$option['ZC_XMLRPC_ENABLE']}

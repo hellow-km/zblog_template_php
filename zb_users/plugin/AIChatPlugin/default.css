@@ -2,7 +2,7 @@
     position: fixed;
     left: 100px;
     bottom: 50px;
-    z-index: 1;
+    z-index: 99999;
 }
 .AI-chat-btn .toggle-btn {
     width: 80px;

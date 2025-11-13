@@ -1,25 +1,9 @@
-{* Template Name:首页及列表页 *}
-<!DOCTYPE html>
-<html lang="{$lang['lang_bcp47']}">
+<div id="app" style="width:100%,height:100%">
+    <div class="page-ai-side" style="width: 200px">{template:AI/side}</div>
+    <div class="page-ai-content">{template:AI/content}</div>
+</div>
 
-<head>
-    {template:AI/header}
-</head>
-
-<style>
-.page-ai-side {
-    width: 200px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-</style>
-
-
-<div class="page-ai-side" style="width: 200px">{template:AI/side}</div>
-<div class="page-ai-content">{template:AI/content}</div>
-
-<script>
+<script type="module">
 var app = new Vue({
     el: "#app",
     data: {
@@ -122,7 +106,7 @@ var app = new Vue({
             }
             this.sendBtnTextDocument = "正在思考中...";
             this.sendBtnDisbledDocument = true;
-            this.appendMessage(userInput, "user");
+            // this.appendMessage(userInput, "user");
             //this.sendStrDocument = '';
 
             fetch("<?php echo $zbp->host; ?>zb_system/admin/chat_document.php", {
@@ -149,5 +133,3 @@ var app = new Vue({
     },
 });
 </script>
-
-</html>
