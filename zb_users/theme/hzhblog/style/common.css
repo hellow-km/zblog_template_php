@@ -5,7 +5,6 @@
     color: #fff;
     border: none;
     padding: 12px 18px !important;
-    border-radius: 50px;
     cursor: pointer;
     font-size: 14px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -22,7 +21,6 @@
     margin: 0 6px;
     border: none;
     padding: 12px 18px !important;
-    border-radius: 50px;
     cursor: pointer;
     font-size: 14px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -85,10 +83,4 @@
 
 .msg-review {
     padding-left: 50px;
-}
-
-.msgarticle {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    position: relative;
 }

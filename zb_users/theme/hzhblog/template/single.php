@@ -16,11 +16,11 @@
             <div class="page-header">
                 {if $pathname != "/AI"}
                 <div class="header-navbar">
-                    {module:navbar}</div>
+                    {template:header2}</div>
                 {template:searchIpt}
                 {else}
                 <div class="header-navbar">
-                    {module:navbar}</div>
+                    {template:header2}</div>
                 {/if}
             </div>
             <div class="page-main">
@@ -28,6 +28,7 @@
                 <div class="page-content">
                     {template:post-single}
                 </div>
+                <div class="page-side2">{template:sidebar2}</div>
             </div>
             <div class="page-footer">{template:footer}</div>
         </div>

@@ -32,6 +32,7 @@
 
 <script src="{$host}zb_users/theme/{$theme}/script/elementUI.js"></script>
 
+<script src="{$host}zb_users/theme/{$theme}/script/utils.js?v={$version}"></script>
 
 {$header}
 {if $type=='index'&&$page=='1'&&$option['ZC_XMLRPC_ENABLE']}
@@ -39,3 +40,4 @@
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{$host}zb_system/xml-rpc/?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{$host}zb_system/xml-rpc/wlwmanifest.xml" />
 {/if}
+

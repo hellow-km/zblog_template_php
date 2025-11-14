@@ -10,7 +10,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
 }
 
 button,
@@ -45,7 +48,7 @@ li {
 
 .page-main {
     width: 100%;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 150px);
 }
 
 .page-footer {

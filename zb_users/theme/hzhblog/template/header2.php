@@ -10,85 +10,60 @@
     </div>
 </div>
 <script type="module">
-const {
-    ref,
-    reactive,
-    computed,
-    watch,
-    onMounted,
-    onBeforeUnmount,
-    nextTick
-} = Vue
-
-const headerApp = {
-    setup() {
-        const headerList = ref([{
-                title: "AI",
-                path: "/AI"
-            },
-            {
+new Vue({
+    el: '#headerApp',
+    data: {
+        headerList: [{
                 title: "文章",
                 path: "/"
             },
-        ])
+            {
+                title: "AI",
+                path: "/AI"
+            },
 
-        const activeLine = ref(null)
-        const activeI = ref(0)
-        const listItem = ref([])
-
-        const toPath = (path, i) => {
-            activeI.value = i
+        ],
+        activeLine: null,
+        activeI: 0,
+        listItem: []
+    },
+    mounted() {
+        this.getData()
+    },
+    methods: {
+        toPath(path, i) {
+            this.activeI = i
             location.href = path
-        }
-
-        const getData = () => {
-            getNavBar().then(res => {
-                console.log("res", res);
-                setActiveI()
-                barLineMove()
-            })
-        }
-
-        const barLineMove = (moveI = activeI.value) => {
-            const moveItem = listItem.value[moveI]
-            Object.assign(activeLine.value.style, {
+        },
+        getData() {
+            this.setActiveI()
+            this.barLineMove()
+        },
+        barLineMove(moveI = this.activeI) {
+            const moveItem = this.$refs.listItem[moveI]
+            Object.assign(this.$refs.activeLine.style, {
                 left: moveItem.offsetLeft + "px",
                 top: moveItem.offsetTop + moveItem.offsetHeight + 5 + "px",
                 width: moveItem.offsetWidth + "px"
             })
-        }
-
-        const onItemLeave = () => barLineMove()
-        const onItemHover = (_, i) => barLineMove(i)
-
-        const setActiveI = () => {
-            headerList.value.some((item, index) => {
+        },
+        onItemLeave() {
+            this.barLineMove()
+        },
+        onItemHover(_, i) {
+            this.barLineMove(i)
+        },
+        setActiveI() {
+            this.headerList.some((item, index) => {
                 if (location.pathname == item.path) {
-                    activeI.value = index
+                    this.activeI = index
                     return true
                 }
             })
         }
+    },
 
-        onMounted(() => {
-            getData()
-
-        })
-
-        return {
-            headerList,
-            activeLine,
-            listItem,
-            activeI,
-            onItemHover,
-            onItemLeave,
-            toPath
-        }
-    }
-}
-window.addEventListener('DOMContentLoaded', function() {
-    Vue.createApp(headerApp).mount('#headerApp')
-});
+})
 </script>
 
 <style>

@@ -52,9 +52,12 @@
     display: flex;
     position: relative;
     flex-wrap: wrap;
+    align-items: center;
 }
 .acticle-list-item .acticle-item-info .info-desc .desc-item {
     margin-right: 15px;
+    display: flex;
+    align-items: center;
 }
 .acticle-list-item .acticle-item-info .info-desc .desc-item .q-icon {
     margin-right: 5px;

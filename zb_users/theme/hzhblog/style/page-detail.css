@@ -83,6 +83,7 @@
 .article-detail-page .article-detail-info .detail-info-tags {
     margin-top: 10px;
     display: flex;
+    align-items: center;
 }
 .article-detail-page .article-detail-info .detail-info-tags .detail-tag {
     margin-left: 10px;

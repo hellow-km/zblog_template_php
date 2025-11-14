@@ -1,32 +1,30 @@
-.AI-chat-btn{
+.AI-chat-btn {
     position: fixed;
     right: 100px;
-    bottom:  20px;
+    bottom: 20px;
 }
-.AI-chat-btn .toggle-btn{
+.AI-chat-btn .toggle-btn {
     width: 80px;
     height: 60px;
-   
 }
 
-.AI-chat-btn .AI-chat-panel{
+.AI-chat-btn .AI-chat-panel {
     display: none;
     position: absolute;
     right: 60px;
-    bottom:  90px;
+    bottom: 90px;
     width: 600px;
     height: 800px;
     background-color: white;
     border: 1px solid black;
     display: none;
-
 }
 
-.AI-chat-btn .active{
+.AI-chat-btn .active {
     display: block;
 }
 
-.AI-chat-panel h3{
+.AI-chat-panel h3 {
     text-align: center;
     margin: 0;
     padding: 10px;
@@ -34,7 +32,7 @@
     border-bottom: 1px solid #ccc;
 }
 
-.AI-chat-panel .panel-footer{
+.AI-chat-panel .panel-footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -43,7 +41,7 @@
     padding: 10px;
 }
 
-.AI-chat-panel .panel-footer .footer-ipt{
+.AI-chat-panel .panel-footer .footer-ipt {
     width: 80%;
     height: 30px;
     margin: 2px;
@@ -57,70 +55,69 @@
     transition: all 0.25s ease;
 }
 
-.AI-chat-panel .panel-footer .footer-ipt:focus{
-    border-color: #4A90E2;
+.AI-chat-panel .panel-footer .footer-ipt:focus {
+    border-color: #4a90e2;
     background: #fff;
-    box-shadow: 0 0 0 3px rgba(74,144,226,0.25);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25);
 }
 
-.prm-btn{
-   height: 34px;
+.prm-btn {
+    height: 34px;
     margin: 0 6px;
-    background: #4A90E2;
+    background: #4a90e2;
     color: #fff;
     border: none;
     padding: 12px 18px;
-    border-radius: 50px;
     cursor: pointer;
     font-size: 14px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
     line-height: 11px;
     text-align: center;
 }
 
-.AI-chat-panel .panel-footer .footer-send{
- 
+.AI-chat-panel .panel-footer .footer-send {
 }
 
-.AI-chat-panel .panel-footer .footer-send:hover{
-    background: #357ABD;
+.AI-chat-panel .panel-footer .footer-send:hover {
+    background: #357abd;
 }
 
-.AI-chat-panel .panel-messages{
+.AI-chat-panel .panel-messages {
     padding: 10px;
     overflow: hidden;
     overflow-y: auto;
 }
 
-.AI-chat-panel .panel-messages .user-message{
+.AI-chat-panel .panel-messages .user-message {
     text-align: right;
     margin-left: auto;
     background-color: #23adcf;
     color: #fff;
 }
 
-.user-message .avatar-icon{
+.user-message .avatar-icon {
     margin-left: 10px;
 }
 
-.AI-chat-panel .panel-messages .ai-message{
+.AI-chat-panel .panel-messages .ai-message {
     text-align: left;
 }
 
-.AI-chat-panel .panel-messages .user-message,.AI-chat-panel .panel-messages .ai-message{
+.AI-chat-panel .panel-messages .user-message,
+.AI-chat-panel .panel-messages .ai-message {
     padding: 8px;
     border: 1px solid #eee;
     border-radius: 6px;
     max-width: 75%;
 }
-.AI-chat-panel .title-message{
+.AI-chat-panel .title-message {
     text-align: center;
     color: gray;
     margin-bottom: 10px;
 }
 
-.avatar-icon{
+.avatar-icon {
     border-radius: 50%;
     margin: 0 8px;
 }

@@ -28,7 +28,7 @@ $htmlStr="<div class='AI-chat-btn' style='display:" .
         <button class='footer-send prm-btn' onclick='sendMsg()'>发送</button>
     </div>
 </div>
-<button class='prm-btn toggle-btn' onclick='onclickChatBtn()'>"
+<button class='ai-plugin-prm-btn toggle-btn' onclick='onclickChatBtn()'>"
 . $btnText .
 "</button>
 </div>";

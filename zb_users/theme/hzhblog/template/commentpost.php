@@ -23,8 +23,10 @@
         <p style="display:none;"><label for="txaArticle">{$lang['msg']['content']}(*)</label></p>
         <p><textarea class="common-textarea" name="txaArticle" id="txaArticle" class="text" cols="100" rows="4"
                 tabindex="5"></textarea></p>
+        <!-- <p><input style="margin-top: 15px;" name="sumbit" type="submit" tabindex="6" value="提交"
+                onclick="$('.msg').hide();zbp.comment.post();location.reload();" class="prm-btn" /></p> -->
         <p><input style="margin-top: 15px;" name="sumbit" type="submit" tabindex="6" value="提交"
-                onclick="$('.msg').hide();zbp.comment.post();location.reload();" class="prm-btn" /></p>
+                onclick="zbp.comment.post();" class="prm-btn" /></p>
         <input type="hidden" name="BackUrl" value="{$article.Url}?a=1">
     </form>
     <div id="comment"></div>
