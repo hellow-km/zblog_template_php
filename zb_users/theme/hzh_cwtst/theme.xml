@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
-<id>hzhblog</id>
-<name>hzhblog</name>
+<id>hzh_cwtst</id>
+<name>仿站</name>
 <url>index.php</url>
 <note></note>
 <description></description>
@@ -20,9 +20,9 @@
 </source>
 <adapted>173430</adapted>
 <version>1.0</version>
-<pubdate>2025-11-12</pubdate>
-<modified>2025-11-12</modified>
-<price>50</price>
+<pubdate>2025-11-14</pubdate>
+<modified>2025-11-14</modified>
+<price>10</price>
 <phpver>7.4</phpver>
 <advanced>
   <dependency></dependency>

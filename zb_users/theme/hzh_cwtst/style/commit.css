@@ -1,0 +1,40 @@
+.commit-time {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-left: 15px;
+}
+
+.commit-opt {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.opt-box {
+    margin-left: auto;
+    display: flex;
+}
+
+.msgname .commentname a {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.msgname .user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.revertcomment {
+    margin-left: 10px;
+}
+
+.msgarticle {
+    position: relative;
+}
+
+.msgname {
+    position: relative;
+}

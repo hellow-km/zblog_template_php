@@ -26,13 +26,14 @@
 <link rel="stylesheet" rev="stylesheet"
     href="{$host}zb_users/theme/{$theme}/style/elementUI.css?{$themeinfo['modified']}" type="text/css" media="all" />
 
+
 <link rel="stylesheet" rev="stylesheet"
     href="{$host}zb_users/theme/{$theme}/fonts/element-icons.woff?{$themeinfo['modified']}" type="text/css"
     media="all" />
 
-<script src="{$host}zb_users/theme/{$theme}/script/elementUI.js"></script>
+    <script src="{$host}zb_users/theme/{$theme}/script/bootstramp.js"></script>
 
-<script src="{$host}zb_users/theme/{$theme}/script/winResize.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/{$theme}/script/elementUI.js"></script>
 
 <script src="{$host}zb_users/theme/{$theme}/script/utils.js?v={$version}"></script>
 

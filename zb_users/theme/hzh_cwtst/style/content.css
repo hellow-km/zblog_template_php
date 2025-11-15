@@ -1,0 +1,21 @@
+.page-pagebar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-content {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    padding-top: 133px;
+}
+
+   .index-white-bg {
+        padding: 26px 30px;
+        background: #fff;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }

@@ -13,12 +13,10 @@
 
 .page-header .header-navbar {
     display: flex;
-    margin-left: calc((100vw - 960px) / 2);
 }
 
 .page-header .head-search {
     margin-left: auto;
-    margin-right: calc((100vw - 960px) / 2);
 }
 
 .page-header .head-search .search-ipt {
@@ -37,4 +35,23 @@
     color: #fff;
     background-color: #4285f4;
     transform: scaleY(1);
+}
+
+
+.header-left-normal{
+    margin-left: calc((100vw - 960px) / 2);
+}
+
+.header-left-small{
+    margin-left: 0;
+}
+
+
+.header-right-normal{
+    margin-right: calc((100vw - 960px) / 2);
+}
+
+.header-right-small{
+    margin-left: auto;
+    margin-right: 0;
 }
