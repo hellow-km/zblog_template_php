@@ -11,4 +11,7 @@
     line-height: 28px;
     color: #999;
 }
+.footer-copy a {
+    color: #999;
+}
   </style>
