@@ -23,7 +23,9 @@
     display: flex;
     align-items: center;
     }
-
+.top-desc{
+    margin-left: -8px;
+}
     .top-desc p {
     color: #999;
     font-size: 13px;

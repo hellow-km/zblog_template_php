@@ -47,7 +47,7 @@
 }
 
 .navbar-item-active a {
-    color: #ff5500;
+    color: #ff5500 !important;
 }
 
 .header-left-normal{
