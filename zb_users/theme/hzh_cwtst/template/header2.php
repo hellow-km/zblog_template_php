@@ -13,7 +13,7 @@
 <style>
     .page-logo{
         cursor: pointer;
-        margin-top: 15px
+        margin-top: 20px
     }
     .cc-page-header{
         Position: relative;
