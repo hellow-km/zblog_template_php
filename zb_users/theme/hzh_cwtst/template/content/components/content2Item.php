@@ -18,7 +18,7 @@
     float: left;
 }
 .content-item2-box{
-    margin-right: 30px;
+    margin-left: 30px;
 }
 .content-item2-messages{
     overflow: hidden;

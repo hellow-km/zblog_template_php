@@ -26,4 +26,8 @@
     color: #999;
     line-height: 34px;
 }
+
+.index-body p {
+    padding: 8px 0;
+}
 </style>

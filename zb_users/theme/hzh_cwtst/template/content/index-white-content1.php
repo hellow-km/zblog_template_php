@@ -38,6 +38,8 @@
     background: #ff5500;
     color: #fff;
 }
+
+
 .index-img-more ul li p span:after {
     content: '';
     position: absolute;
