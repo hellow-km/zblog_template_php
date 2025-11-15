@@ -40,8 +40,9 @@ input {
 }
 
 a {
+   background-color: transparent;
     text-decoration: none;
-    color: inherit;
+    color: #474e5d;
 }
 
 ul {
