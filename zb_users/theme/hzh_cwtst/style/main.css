@@ -18,11 +18,11 @@
     display: none;
 }
 
-html{
+html {
     font: 14px "Microsoft YaHei";
 }
 
-body{
+body {
     overflow-y: scroll;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 100%;
@@ -40,7 +40,7 @@ input {
 }
 
 a {
-   background-color: transparent;
+    background-color: transparent;
     text-decoration: none;
     color: #474e5d;
 }
@@ -64,7 +64,6 @@ li {
 
 .page-main {
     width: 100%;
-
 }
 
 .page-footer {
@@ -80,9 +79,8 @@ li {
     z-index: 1000;
 }
 
-
-.link-a:hover{
-    color:#ff5500;
+.link-a:hover {
+    color: #ff5500;
 }
 
 .index-head h2 {
@@ -90,4 +88,9 @@ li {
     float: left;
     height: 39px;
     border-bottom: solid 2px #ff5500;
+}
+
+.clearfixed {
+    overflow: hidden;
+    clear: both;
 }

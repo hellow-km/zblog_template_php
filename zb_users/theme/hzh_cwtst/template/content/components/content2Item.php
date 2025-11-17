@@ -1,11 +1,21 @@
+
+{php}
+// 获取该分类下最新 5 篇文章
+$articles = $zbp->GetArticleList(
+    '*', 
+    array(array('=', 'log_CateID', $cat->ID)), // 条件：分类ID
+    array('log_PostTime' => 'DESC'),           // 按时间降序
+    8                                         // 数量
+);
+{/php}
 <li class="content-item2">
     <div class="content-item2-box">
         <div class="index-head">
-            <h2>长春新闻</h2>
-            <span class="index-head-more"><a class="link-a" href="/">更多&gt;&gt;</a></span>
+            <h2>{$cat.Name}</h2>
+            <span class="index-head-more"><a class="link-a" href="/{$cat->Alias}">更多&gt;&gt;</a></span>
         </div>
         <div class="content-item2-messages">
-            {foreach [1,2,3,4,5,6,7,8] as $i}
+            {foreach $articles as $article}
             {template:content/components/content2Item-message}
             {/foreach}
         </div>

@@ -11,11 +11,12 @@
     padding: 0;
     max-width: 1200px;
     padding-top: 133px;
+    min-height: calc(100vh - 226px);
 }
 
-   .index-white-bg {
-        padding: 26px 30px;
-        background: #fff;
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
+.index-white-bg {
+    padding: 26px 30px;
+    background: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}

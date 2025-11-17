@@ -1,19 +1,40 @@
+{php}
+$cate = $zbp->GetCategoryByID($cat->ID);
+
+$articles = [];
+
+if ($cate && $cate->ID > 0) {
+
+$w = array(
+array('=', 'log_CateID', $cate->ID) // 修正: 必须是二维数组
+);
+
+$articles = $zbp->GetArticleList(
+'*',
+$w,
+array('log_PostTime' => 'DESC'),
+10,
+null
+);
+}
+{/php}
+
 <div class="index-white-bg">
     <div class="index-head">
-        <h2>长春新闻</h2>
-        <span class="index-head-more"><a class="link-a" href="/">更多&gt;&gt;</a></span>
+        <h2>{$cat->Name}</h2>
+        <span class="index-head-more"><a class="link-a" href="/{$cat->Alias}">更多&gt;&gt;</a></span>
     </div>
     <div class="index-img-more">
         <ul>
-            {foreach [1,2,3,4,5,6,7,8] as $i}
+            {foreach $articles as $a}
             <li>
                 <div class="index-img-more-once">
                     <div class="index-img-more-once-imgbox">
-                        <img src="" height="180" width="262" alt="">
+                        <img src="/imgs/defaultpic.gif" height="180" width="262" alt="">
                     </div>
-                    <h2><a href="#">占位占位占位占位占位占位占位占位占位占位{$i}</a></h2>
-                    <p><span>简介</span>2025年11月5日，香港——作为亚洲金融科技领域的年度盛事，2025香港金融科技周（与StartmeupHK创业节首次联合举办）于11月5日在香港会议展览中心圆满落幕。本次大会以“策动金融科技新
-                    </p>
+                    <h2><a href="{$a.Url}">{$a.Title}</a></h2>
+                    <div class="li-intro"><span>简介</span>{$a.Intro}</div>
+
                 </div>
             </li>
             {/foreach}
@@ -31,7 +52,16 @@
 
 }
 
-.index-img-more ul li p span {
+.index-img-more ul li .li-intro {
+    display: flex;
+    align-items: baseline;
+}
+
+.index-img-more ul li .li-intro p {
+    height: auto;
+}
+
+.index-img-more ul li .li-intro>span {
     margin-right: 15px;
     font-size: 13px;
     display: inline-block;
@@ -44,7 +74,7 @@
 }
 
 
-.index-img-more ul li p span:after {
+.index-img-more ul li .li-intro>span:after {
     content: '';
     position: absolute;
     right: -4px;

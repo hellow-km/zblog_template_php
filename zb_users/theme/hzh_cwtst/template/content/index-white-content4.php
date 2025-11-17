@@ -3,7 +3,7 @@
         <h2>友情链接</h2>
     </div>
     <div class="links">
-        <a class="link-a" href="#" target="_blank">网站地图</a> <a class="link-a" href="#" target="_blank">百度地图</a>
+        <a class="link-a" href="/news_web/sitemap.html" target="_blank">网站地图</a> <a class="link-a" href="/news_web/sitemap.xml" target="_blank">百度地图</a>
     </div>
 </div>
 

@@ -1,18 +1,33 @@
+{php}
+// 获取热度排行前 10 的文章
+$w = array(); // 条件为空表示所有文章
+$hotArticles = $zbp->GetArticleList(
+'*', // 字段
+$w, // 条件
+array('log_ViewNums' => 'DESC'), // 按阅读量降序
+10, // 数量
+null // 分页
+);
+{/php}
+
 <div class="index-top">
     <div class="index-top-box">
         <div class="top-leftbox">
-            <img src="" width="100%" height="395" alt="">
+            <img src="/imgs/defaultpic.gif" width="100%" height="395" alt="">
         </div>
         <div class="top-rightbox">
             <div class="week-click-one">
-                <h2><a class="link-a" href="#" title="互联网资源“大成智慧教育”等域名现有资源转让出售">互联网资源“大成智慧教育”等域名现有资源转让出售</a></h2>
-                <p>出售互联网资源“大成智慧教育”等现有域名资源转让出售不做任何端口和证书<a href="#">详细&gt;&gt;</a></p>
+                <h2><a class="link-a" href="{$hotArticles[0].Url}"
+                        title="{$hotArticles[0].Title}">{$hotArticles[0].Title}</a></h2>
+                <p>{$hotArticles[0].Title}<a href="{$hotArticles[0].Url}">详细&gt;&gt;</a></p>
             </div>
             <div class="week-click-two">
                 <ul>
 
-                    {foreach [2,3,4,5,6,7,8,9,10] as $i}
+                    {foreach $hotArticles as $i => $article}
+                    {if $i>0}
                     {template:content/components/index-top-message}
+                    {/if}
                     {/foreach}
 
                 </ul>
@@ -60,7 +75,6 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    display: flex;
     align-items: center;
 }
 

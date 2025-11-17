@@ -1,1 +1,1 @@
-<li><span>[{$i}]</span><a class="link-a" href="#" title="iq正常人是多少_iq正常人多少算正常">iq正常人是多少_iq正常人多少算正常</a></li>
+<li><span>[{$i+1}]</span><a class="link-a" href="{$article.Url}" title="{$article.Title}">{$article.Title}</a></li>

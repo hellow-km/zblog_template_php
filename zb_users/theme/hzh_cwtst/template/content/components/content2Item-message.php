@@ -1,6 +1,4 @@
 <p>
-    <span>2025-11-12</span>
-    <a href="#" class="link-a" title="百年人寿吉林分公司开展“为民办实事 走进养老中心 关爱老年人公益活动＂">百年人寿吉林分公司开展“为民办实事 走进养老中心 关爱老年人公益活动＂</a>
+    <span>{$article.Time('Y-m-d')}</span>
+    <a href="{$article.Url}" class="link-a" title="{$article.Title}">{$article.Title}</a>
 </p>
-
-<style></style>
