@@ -5878,3 +5878,731 @@ array (
   3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
   4 => 8,
 )
+[2025-11-17 15:59:32 .76191500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:32 .81839800 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:33 .15142300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:36 .06985400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:36 .15898700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:36 .24931900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:37 .75970200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:37 .80654400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:37 .88103200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:40 .79627300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:40 .87304700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:40 .94356900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:42 .97576300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:43 .02203700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:43 .09260600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:44 .55519600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:44 .61583900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:44 .68584700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:47 .34297700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:47 .38979600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:47 .49717900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:49 .48750000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:49 .53412500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:49 .60831100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:51 .33166700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:51 .38413400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:51 .45349300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:53 .52379500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:53 .57082600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:53 .64224200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:57 .96309000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:58 .03598300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 15:59:58 .13437300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:02 .86258400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:02 .91004300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:02 .97780100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:06 .44600100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:06 .49352200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:06 .56460000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:10 .38750400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:10 .45041100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:10 .54264400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:13 .26193400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:13 .35720300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:13 .43591500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:22 .78802400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:22 .83492400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:22 .90282000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:25 .36652300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:25 .41447900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:25 .50469800 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:27 .67937200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:27 .72681800 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:27 .79419900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:35 .23041300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:35 .28329300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:35 .36795800 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:37 .03041600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:37 .09032600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:37 .16277300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:39 .20430400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:39 .25165600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:00:39 .32258500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:01:07 .54779600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:01:07 .61991500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:01:07 .71137300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:09:56 .26141300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:09:56 .56927600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:09:58 .39944400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:09:58 .62767800 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 16:10:27 .87980100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hz_tx\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 16:10:28 .12113500 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hz_tx\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:12 .54006100 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:12 .87316400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:13 .54454400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:13 .71172400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:18 .60232000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:18 .75823000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined index: ‹',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzhblog\\pagebar.php',
+  4 => 4,
+)
+[2025-11-17 17:25:50 .46908900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:50 .67418400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:52 .54787400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:52 .67732000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:52 .80259000 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:59 .10577300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:25:59 .79685200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:06 .09383600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:06 .26092400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:07 .24565900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:07 .44901600 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:09 .76295700 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
+[2025-11-17 17:26:10 .01698200 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: article',
+  3 => 'D:\\download\\project\\Z-BlogPHP_1_7_4_3430_Shelter\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
+  4 => 8,
+)
