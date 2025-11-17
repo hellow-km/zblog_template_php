@@ -1,9 +1,9 @@
 <div class="index-white-bg">
     <div class="index-head">
-	  <h2>友情链接</h2>
-	</div>
+        <h2>友情链接</h2>
+    </div>
     <div class="links">
-	    <a class="link-a" href="#" target="_blank">网站地图</a> <a class="link-a" href="#" target="_blank">百度地图</a> 
+        <a class="link-a" href="#" target="_blank">网站地图</a> <a class="link-a" href="#" target="_blank">百度地图</a>
     </div>
 </div>
 
@@ -15,6 +15,7 @@
     font-size: 15px;
     color: #555;
 }
+
 .links {
     overflow: hidden;
 }

@@ -1,9 +1,9 @@
 <li class="content-item2">
     <div class="content-item2-box">
         <div class="index-head">
-	      <h2>长春新闻</h2>
-	      <span class="index-head-more"><a class="link-a" href="/">更多&gt;&gt;</a></span>
-	    </div>
+            <h2>长春新闻</h2>
+            <span class="index-head-more"><a class="link-a" href="/">更多&gt;&gt;</a></span>
+        </div>
         <div class="content-item2-messages">
             {foreach [1,2,3,4,5,6,7,8] as $i}
             {template:content/components/content2Item-message}
@@ -13,14 +13,16 @@
 </li>
 
 <style>
-.content-item2{
+.content-item2 {
     width: 33.33%;
     float: left;
 }
-.content-item2-box{
+
+.content-item2-box {
     margin-left: 30px;
 }
-.content-item2-messages{
+
+.content-item2-messages {
     overflow: hidden;
 }
 
@@ -40,6 +42,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .content-item2-messages span {
     display: inline-block;
     float: right;
