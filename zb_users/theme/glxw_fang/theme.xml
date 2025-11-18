@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
-<id>hzh_cwtst</id>
-<name>仿站https://cwtstour.com/</name>
+<id>glxw_fang</id>
+<name>桂林新闻仿https://news.guilinlife.com/</name>
 <url>index.php</url>
-<note></note>
+<note>桂林新闻仿https://news.guilinlife.com/</note>
 <description></description>
 <path></path>
 <include></include>
 <level>1</level>
 <author>
-  <name>hzh</name>
+  <name></name>
   <email></email>
   <url></url>
 </author>
@@ -20,9 +20,9 @@
 </source>
 <adapted>173430</adapted>
 <version>1.0</version>
-<pubdate>2025-11-14</pubdate>
-<modified>2025-11-14</modified>
-<price>10</price>
+<pubdate>2025-11-18</pubdate>
+<modified>2025-11-18</modified>
+<price>0</price>
 <phpver>7.4</phpver>
 <advanced>
   <dependency></dependency>

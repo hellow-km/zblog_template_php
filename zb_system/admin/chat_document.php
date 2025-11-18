@@ -25,7 +25,7 @@ function AI_Chat($msg,$num=100){
     return file_get_contents($url, false, $context);
 }
 
-function getCateGoryData($text,$num){
+function getData($text,$num){
     $chatRes = AI_Chat($text,$num);
 
     if (!$chatRes) {
@@ -40,7 +40,7 @@ function getCateGoryData($text,$num){
 $msg = $_POST['msg'] ?? '';
 $num = $_POST['num'] ?? '';
 
-$reply = getCateGoryData($msg,$num);
+$reply = getData($msg,$num);
 
 // ✅ 关键：返回 JSON 给前端
 echo json_encode([
