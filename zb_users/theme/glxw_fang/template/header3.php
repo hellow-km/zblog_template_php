@@ -6,10 +6,10 @@
 <meta name="renderer" content="webkit">
 <title>{$name}-{$title}</title>
 
-<link rel="stylesheet" rev="stylesheet" href="{$host}zb_users/theme/{$theme}/style/main.css?{$themeinfo['modified']}"
-    type="text/css" media="all" />
+<link rel="stylesheet" rev="stylesheet"
+    href="{$host}zb_users/theme/{$theme}/style/single/1.css?{$themeinfo['modified']}" type="text/css" media="all" />
 
-<script src="{$host}zb_users/theme/rmrb/script/1.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/rmrb/script/single/1.js?v={$version}"></script>
 
 <script src="{$host}zb_system/script/zblogphp.js?v={$version}"></script>
 
@@ -17,16 +17,6 @@
 </script>
 
 <script src="{$host}zb_users/theme/rmrb/script/utils.js?v={$version}"></script>
-
-<script src="{$host}zb_users/theme/rmrb/script/2.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/3.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/4.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/5.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/6.js?v={$version}"></script>
-
-<script src="{$host}zb_users/theme/rmrb/script/7.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/8.js?v={$version}"></script>
-
 
 {$header}
 {if $type=='index'&&$page=='1'&&$option['ZC_XMLRPC_ENABLE']}

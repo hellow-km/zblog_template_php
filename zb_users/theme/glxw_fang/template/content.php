@@ -12,7 +12,7 @@
                                 {/php}
 
 
-                                <li><a href="/" class="active" data-chname="homepage" data-catid="0">推荐</a></li>
+                                <li><a href="/" data-chname="homepage" data-catid="0">推荐</a></li>
                                 {foreach $allCategories as $cate}
                                 <li><a href="{$cate.Url}">{$cate.Name}</a></li>
 
@@ -89,545 +89,58 @@
                         <a class="next-btn">下一张</a>
                     </div>
                     <script>
-                    jQuery(".news-slider").slide({
-                        mainCell: ".slider-list",
-                        effect: "left", // left / top / fade
-                        autoPlay: true, // 自动播放
-                        delayTime: 500, // 切换时间(ms)
-                        interTime: 3000, // 自动切换间隔(ms)
-                        trigger: "click" // 鼠标触发方式
+                    jQuery(function($) {
+                        var $slider = $(".news-slider .slider-list");
+                        var $li = $slider.find("li");
+                        var index = 0;
+                        var count = $li.length;
+                        var width = $li.outerWidth();
+
+                        function showSlide(i) {
+                            $slider.stop().animate({
+                                left: -i * width
+                            }, 500);
+                            $(".slider-index li").removeClass("on").eq(i).addClass("on");
+                        }
+
+                        var timer = setInterval(function() {
+                            index = (index + 1) % count;
+                            showSlide(index);
+                        }, 3000);
+
+                        $(".prev-btn").click(function() {
+                            index = (index - 1 + count) % count;
+                            showSlide(index);
+                        });
+                        $(".next-btn").click(function() {
+                            index = (index + 1) % count;
+                            showSlide(index);
+                        });
+
+                        $(".slider-index li").click(function() {
+                            index = $(this).index();
+                            showSlide(index);
+                        });
                     });
                     </script>
                     <div class="news-list">
                         <ul id="newsListContainer">
-                            <li>
-                                <div class="multi-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri9c47d962e59aa6ca.html"
-                                            target="_blank">
-                                            一对情侣庆祝纪念日，小伙扭头亲吻女友头发被点燃，当事人回应：只烧焦一点，目前已理发 </a>
-                                    </div>
-                                    <div class="content-img clearfix">
-
-                                        <div class="img-item img1">
-                                            <a href="//news.guilinlife.com/article/5dri9c47d962e59aa6ca.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/0UK3QGFqN1BsUv8cZhDy21mH9FDpeb8TfyRNPygOPpo7c-zhNd-b-rn-eF_porfTPUU8pe4Swtx6c-wTOV0QShyKo3c54MZBo4mpzbb_eraIU47AXXTTx32GdD-hHSh6sguWMpLt1b0W9W8P4rfWbA%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/0UK3QGFqN1BsUv8cZhDy21mH9FDpeb8TfyRNPygOPpo7c-zhNd-b-rn-eF_porfTPUU8pe4Swtx6c-wTOV0QShyKo3c54MZBo4mpzbb_eraIU47AXXTTx32GdD-hHSh6sguWMpLt1b0W9W8P4rfWbA%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img2">
-                                            <a href="//news.guilinlife.com/article/5dri9c47d962e59aa6ca.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/3oIv89ZkhD8kTpzoqL1A7LgQ3MSEaLj2zO4tvvR5XJWZy46UPR2CWJvQA1w_WzcRIjab9sCdQ5CuOlRLmOp4sI5T2R-Yt2cTRaDsVFElxDcmXMAQeOrF-pcCbdrPEk3a-CxgS8fsKhIQHcR51MAQ7Q%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/3oIv89ZkhD8kTpzoqL1A7LgQ3MSEaLj2zO4tvvR5XJWZy46UPR2CWJvQA1w_WzcRIjab9sCdQ5CuOlRLmOp4sI5T2R-Yt2cTRaDsVFElxDcmXMAQeOrF-pcCbdrPEk3a-CxgS8fsKhIQHcR51MAQ7Q%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img3">
-                                            <a href="//news.guilinlife.com/article/5dri9c47d962e59aa6ca.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/5s9LMemAORdULmtBfnhTPuhF4JqpZ8_ObIenL7MjhYiUEJpSv5vIQa__MPQ8GcBGIdtMPZkCYCjUHvuzVdkHUc-m-jq5pDYRp-t3umBFTnqRIy1R7H_ySuhbxIptiu44SPczS96RzKho-1H2weqVjA%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/5s9LMemAORdULmtBfnhTPuhF4JqpZ8_ObIenL7MjhYiUEJpSv5vIQa__MPQ8GcBGIdtMPZkCYCjUHvuzVdkHUc-m-jq5pDYRp-t3umBFTnqRIy1R7H_ySuhbxIptiu44SPczS96RzKho-1H2weqVjA%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">话题</span>
-                                        <span class="post-date">2025-11-18</span>
-                                    </div>
-                                </div>
-                            </li>
-
-
+                            {foreach $articles as $a}
                             <li>
                                 <div class="big-pic-content">
                                     <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dric12d0a7e50f0d7a9.html"
-                                            target="_blank">
-                                            弟弟无民事行为能力，大姐照顾13年转走135万元，被俩妹妹告上法庭…… </a>
+                                        <a href="{$a.Url}" target="_self">{$a.Title}</a>
                                     </div>
                                     <div class="content-img ">
                                     </div>
                                     <div class="content-other clearfix">
                                         <span class="content-type">话题</span>
-                                        <span class="post-date">2025-11-18</span>
+                                        <span class="post-date">{$a.Time('Y-m-d')}</span>
 
                                     </div>
                                 </div>
                             </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5dri2795eb29517c745c.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/6ZG6LHpOB_Xeh9ZYLPO9666stxsfwWr8bzDq24QHrrEj04AO_gHwx3PHNibCCeLhF-i8DH2N8V_9JR8mti0KUvdDi_ZdGmh95j2MT1A_P0Z7HuRuFtSfupvP3pl8IR4QvHX0VPQuz-cZoeoyun1-jw%3D%3D/media"
-                                                src="https://nimg.guilinlife.com/mmbiz/6ZG6LHpOB_Xeh9ZYLPO9666stxsfwWr8bzDq24QHrrEj04AO_gHwx3PHNibCCeLhF-i8DH2N8V_9JR8mti0KUvdDi_ZdGmh95j2MT1A_P0Z7HuRuFtSfupvP3pl8IR4QvHX0VPQuz-cZoeoyun1-jw%3D%3D/media"
-                                                style="display: block;">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5dri2795eb29517c745c.html"
-                                                    target="_blank">
-                                                    一头野猪“跳桥寻短见”？目击者：它看到桥两头都有车，受惊吓坠桥 </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">话题</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="multi-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5driec180142ba122bb8.html"
-                                            target="_blank">
-                                            结婚8年妻子花光116万积蓄，其中67万打赏男主播，丈夫痛哭：不爱了，她耐不住寂寞，妻子：上头了；平台回应 </a>
-                                    </div>
-                                    <div class="content-img clearfix">
-
-                                        <div class="img-item img1">
-                                            <a href="//news.guilinlife.com/article/5driec180142ba122bb8.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/0NtCCkhmYZA_RvSRrAEJ_4ZhVcyLUFhLxx0F4-hR3Hx-EpH4YShXmBLVu7NCxpUpIH1LrHN9GkzQqe5oUQTmhQm_ViyvzBbg9P_sQIxoNb15Ixg0jLa4FiiQcF28GcpQtWrOnFjhj-N5ouhuQXaMyg%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/0NtCCkhmYZA_RvSRrAEJ_4ZhVcyLUFhLxx0F4-hR3Hx-EpH4YShXmBLVu7NCxpUpIH1LrHN9GkzQqe5oUQTmhQm_ViyvzBbg9P_sQIxoNb15Ixg0jLa4FiiQcF28GcpQtWrOnFjhj-N5ouhuQXaMyg%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img2">
-                                            <a href="//news.guilinlife.com/article/5driec180142ba122bb8.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/gATS6qZdHY4yb100P9I_mslKz_O2PryDVhDw35alvntwaLn7MRh5RAB6mdgviDlUQ7OTEbc9vwXmxAvXvUD_CoZM9_zRfax_8jVUD5ZWb9wvnX5w1VVqiicrOcHDRLyfasrGnxb5t5MYqOpMIn1zSw%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/gATS6qZdHY4yb100P9I_mslKz_O2PryDVhDw35alvntwaLn7MRh5RAB6mdgviDlUQ7OTEbc9vwXmxAvXvUD_CoZM9_zRfax_8jVUD5ZWb9wvnX5w1VVqiicrOcHDRLyfasrGnxb5t5MYqOpMIn1zSw%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img3">
-                                            <a href="//news.guilinlife.com/article/5driec180142ba122bb8.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/-P0UUccMqa8v2fJQ9P9r4tqRViN6KeaCVgRYd9XOLD3QR0j0cF2ZcZyu5ydqZDkGT3rIZUfHXfex8dvjeAUPO5LcaLy5NWKGUSDcnsNUSkwMtAFrIOglc5JJQgYKW_Z0eVVmuQ5fMZrVOSffiUil-g%3D%3D/media"
-                                                    src="https://nimg.guilinlife.com/mmbiz/-P0UUccMqa8v2fJQ9P9r4tqRViN6KeaCVgRYd9XOLD3QR0j0cF2ZcZyu5ydqZDkGT3rIZUfHXfex8dvjeAUPO5LcaLy5NWKGUSDcnsNUSkwMtAFrIOglc5JJQgYKW_Z0eVVmuQ5fMZrVOSffiUil-g%3D%3D/media"
-                                                    style="display: block;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">话题</span>
-                                        <span class="post-date">2025-11-18</span>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5dricebbb69c60a08385.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/IZxPnjuyL5IWavweKOwAgxAt-NGDzyw24rn0Mt7bfF1tAKWuuBwbm0-robH-aP7-4ZT6quXgeaONVi6Vap9Fp5R5J8L3S72VPVyp5tV0mR7rm11jJDti9DSnqSD6ZZtPCxYXh900Ss2WN8w-DnddvA%3D%3D/media"
-                                                src="https://nimg.guilinlife.com/mmbiz/IZxPnjuyL5IWavweKOwAgxAt-NGDzyw24rn0Mt7bfF1tAKWuuBwbm0-robH-aP7-4ZT6quXgeaONVi6Vap9Fp5R5J8L3S72VPVyp5tV0mR7rm11jJDti9DSnqSD6ZZtPCxYXh900Ss2WN8w-DnddvA%3D%3D/media"
-                                                style="display: block;">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5dricebbb69c60a08385.html"
-                                                    target="_blank">
-                                                    广州一女子在商场厕所被纸巾盒铁片划伤臀部，商场：正处理，会考虑加以改进 </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">话题</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri934b1f500f512392.html"
-                                            target="_blank">
-                                            用AI假图骗“仅退款”？技术不该用来薅羊毛 </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">生活帮</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri72c4f371fe3e6e4f.html"
-                                            target="_blank">
-                                            这种慢慢“吃掉”肺功能的病，早期症状隐匿，极易被忽视 </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">生活帮</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5dri84fdf2f8b97893f9.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/QB3_Nk-hGOJQ-PXYuhhU6IQwxlXC_hWFFNlC5MGI3TCc_SEwK0sd6uiNhmENWyV320fa4GGiVGuWjqZi8RjdyQCDUV-5IFEqz6BDv7toMUiVk05VRzUxmcKnv_ffZrBBjjnJEnxQBFTnwlyFKIpIPw%3D%3D/media">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5dri84fdf2f8b97893f9.html"
-                                                    target="_blank">
-                                                    “冬藏”不是“不动”！做好四件事，养出来年好底子 </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">生活帮</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="multi-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5drid3dc6024d3717f5a.html"
-                                            target="_blank">
-                                            “升糖大户”被揪出，不是米饭！很多人不听劝，每天都在吃 </a>
-                                    </div>
-                                    <div class="content-img clearfix">
-
-                                        <div class="img-item img1">
-                                            <a href="//news.guilinlife.com/article/5drid3dc6024d3717f5a.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/FdcKJZqOX36NpVIP1Nws-ms_CxxYUsJcu57hiQWLQNkX2scrQHaWP9B1qjGhu0t9DxfKMPfcHROnyMJ49fP2tYkNPm_R4auffQSMSBnjC3PPKjJEZD6uWgFrHuMG0QI61tF5O3W1v9Q9tRb6KD4VYQ%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img2">
-                                            <a href="//news.guilinlife.com/article/5drid3dc6024d3717f5a.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/tv1lwqIJBX3zTvw-Lqr4zMKMFmzgYN2LjT2GcM28g1MX1B7aOoF_HNg_nnmw0a9H7dbjdDbvp_STs3esg8gQb9IN1SDcFrrMRqOlaI09MNIQ8oirqlTMBgv6-YE3Rne5J9C0XtIXV7ZFL_Iwmf_LTQ%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img3">
-                                            <a href="//news.guilinlife.com/article/5drid3dc6024d3717f5a.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/VIVnW-tmuAB9e-Cy2XY3wBV0c_pHX3et4dCT6ONxELLHw4LtCbFOmJ_1emohstGBa9tcNsr6JZ9eMNyku7S5UJgoBuXZO05XxvT_vzLI_1YbPNPStZFVn2qtpYdSMYLX52QkHfQ8vOz4KSNDDXRfNg%3D%3D/media">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">生活帮</span>
-                                        <span class="post-date">2025-11-18</span>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri4941b2e419ca9ef7.html"
-                                            target="_blank">
-                                            补贴25%!年底截止，快来看看你符合申请条件吗? </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5drif2f010b76d81d3a8.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/zSU4Sk01VojSsiL6VlaPfEBCZ12xXy5U0jYBko-tGvwVnYM5V_ZKki1lLbgnyy0mXm4Hp8cbJgcO_ae-2qo5eoG5DKh2rw3_Anocj6OPjS7_jpXdnsSApw66Lrpsb42a4lqff-g9NNhf27S8oGr0Wg%3D%3D/media">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5drif2f010b76d81d3a8.html"
-                                                    target="_blank">
-                                                    百万元资金扶持!广西“微短剧+文旅”重点作品项目面向全国征集 </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">桂林</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri04f97fc2bbf23340.html"
-                                            target="_blank">
-                                            智能制造推动桂林产业发展向“新”而行 </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri73cc4e66b70d6c94.html"
-                                            target="_blank">
-                                            下月起全区实现医保刷脸支付 </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5drifa2701f50763d369.html"
-                                            target="_blank">
-                                            我市启动失业保险一次性扩岗补助申领工作 </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="multi-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri49b6da44acccda50.html"
-                                            target="_blank">
-                                            露营，正在书写桂林山水间的新故事 </a>
-                                    </div>
-                                    <div class="content-img clearfix">
-
-                                        <div class="img-item img1">
-                                            <a href="//news.guilinlife.com/article/5dri49b6da44acccda50.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/eqqDpdGVeoR2nPIZY7q7S7AnJb7-JjmK024gfb3SNa7XwIFkgQZV_MlIfQP2THz-JaBcsMjLya2vwCHqj81Cu4-hr70ujjbRGO4AR8O9KVPGzGTTmI1mtV0MdWhStWi_0KakF6ImBVHEe933pkBMlg%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img2">
-                                            <a href="//news.guilinlife.com/article/5dri49b6da44acccda50.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/z_j25S6k9OJi8g85WkfK_NyA8gcl9oZ5eYYQrAUmsdWBI8jpWo3F3oL96ZuDCU0-N9UoytaAlkdht_A7eSdWeA8FNN-RBtec-gnRUPw_CIbSaJqjAwk-Tq8_3UZ2vDkmKe53uhcZ52O2yibO6VQY5Q%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img3">
-                                            <a href="//news.guilinlife.com/article/5dri49b6da44acccda50.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/QmQX4VUyN70a0MYf1h3-80Cv7zbmM2R2XVNiPaRs5PyBQFH3v83y2oMeL6PjqYGE9fmDBYPvo5TQws2QyZlq1r27HrpkiyCyzm7yboB5uDGoSWPJOEv_j-iPwqoje9EQsf6L7Fs83wjokwk0iZvE7g%3D%3D/media">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri39cf29d7119d2efb.html"
-                                            target="_blank">
-                                            被称为“最营养的早餐”，每天吃几个更健康？ </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="multi-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5drib0894eb507e71cb4.html"
-                                            target="_blank">
-                                            孩子成绩不太理想，家长花20多万元打点疏通关系，希望孩子可以上名校，结果…… </a>
-                                    </div>
-                                    <div class="content-img clearfix">
-
-                                        <div class="img-item img1">
-                                            <a href="//news.guilinlife.com/article/5drib0894eb507e71cb4.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/isVuqvDzE2mVPpa3lNdk0UdRWcKjMYu_lWoq9J3GBhz5HgihdJnypFvz-1UWJpmbheV8dtXz-7siYCvmAQjh64aZ1UP9ifqMm_7YHxYri7r6he12gD-tZxzpTnzlNscbKMMKugOkIobEJOyBqnn8jg%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img2">
-                                            <a href="//news.guilinlife.com/article/5drib0894eb507e71cb4.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/bUs4GyM9074tkHzz4LINsF-xitYmIuxNV_BeCljj6YC5dAB-bSlTgUGFFaBPHxCJubdPpGQiRqmbz0VFDHtONNR9KhM_3iLirwWmiMRBDBMZaqvCZ5aYJ-7PIEbcDhe0XNq0SCJsFCy1J7Hl78BN0w%3D%3D/media">
-                                            </a>
-                                        </div>
-
-                                        <div class="img-item img3">
-                                            <a href="//news.guilinlife.com/article/5drib0894eb507e71cb4.html"
-                                                target="_blank">
-                                                <img class="lazy"
-                                                    data-original="https://nimg.guilinlife.com/mmbiz/XmJcPjEdZ-2CDWlmG3TTL6S_L-ex-8P6w2cIUni_34zq2dn6umIbh42lqaU8etuNivINH00rZQuDgmEO5khzRDgLl_V5XmeV0plW0lDYVfBM-W80ufWMAWMToRVnpYRHS_HriL3I0bG1u1ALDtQYUQ%3D%3D/media">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="big-pic-content">
-                                    <div class="content-title">
-                                        <a href="//news.guilinlife.com/article/5dri5a78ca7ad54c99ac.html"
-                                            target="_blank">
-                                            一个血液黏稠的人，身体会发出5个信号！ </a>
-                                    </div>
-                                    <div class="content-img ">
-                                    </div>
-                                    <div class="content-other clearfix">
-                                        <span class="content-type">桂林</span>
-                                        <span class="post-date">2025-11-18</span>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5driffb1a772b8f255be.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/cCjUcyMz2P1iV04aMyo6jGbPeb9sMbZve5cl7MV9LTVx2y9qmVxHh05QHTpLX0RWSbezvXdilTsKmvDpEoyEhxPoQ6nYBSylyDR9iUVQbIpo7FR40JM9yqJpG6njozUsn_esyNkYf3J3o-MEX3GINg%3D%3D/media">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5driffb1a772b8f255be.html"
-                                                    target="_blank">
-                                                    预计年内建成通车！广西多条高速最新进展→ </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">桂林</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="normal-content">
-                                    <div class="content-img">
-                                        <a href="//news.guilinlife.com/article/5dri4e8a59ccf2b02888.html"
-                                            target="_blank">
-                                            <img class="lazy"
-                                                data-original="https://nimg.guilinlife.com/mmbiz/7g2VvbTE0q6GpBaH85zUt5f0rXJ_q8Guxw9_cu22UCANRvf7cwwe9g38uaFIfX-jQYL6LAh1Ejj9ZHsg4zjra5j0Q3a117yL2oVOvf53D6vbJbpWrX8r98rY4MW0v3XKLCCHsONKuZMUpKOSviRuNg%3D%3D/media">
-                                        </a>
-                                    </div>
-                                    <div class="content-main">
-                                        <div class="content-title">
-                                            <div>
-                                                <a href="//news.guilinlife.com/article/5dri4e8a59ccf2b02888.html"
-                                                    target="_blank">
-                                                    寒潮入桂！有霜冻！广西迎9级大风+降温+降雨！ </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-other">
-                                            <span class="content-type">桂林</span>
-                                            <span class="post-date">2025-11-18</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
+                            {/foreach}
                         </ul>
                         <div class="load-more">
                             <a class="load-btn"><span>加载更多</span></a>
@@ -799,26 +312,10 @@
                 </div>
                 <div class="list-content">
                     <ul>
-                        <li><a href="//news.guilinlife.com/article/5drh45bd8e9f7935d735.html" target="_blank"
-                                title="叠彩区大河乡举办2025年农村党员干部及后备力量能力素质提升培训班">叠彩区大河乡举办2025年农村党员干部及后备力量能力素质提升培训班</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drhd27c9a5844fcddfb.html" target="_blank"
-                                title="【坚守与传承】   深山篾匠龚厚友与他的竹编">【坚守与传承】 深山篾匠龚厚友与他的竹编</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh422d19e3b6ee614a.html" target="_blank"
-                                title="一习话·迈向“十五五”｜“以更大气魄深化改革、扩大开放”">一习话·迈向“十五五”｜“以更大气魄深化改革、扩大开放”</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh0696270c9d12d22c.html" target="_blank"
-                                title="第一视点丨以自主创新塑造发展新优势">第一视点丨以自主创新塑造发展新优势</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drhbfd1ea59c97ed025.html" target="_blank"
-                                title="思想之光照亮法治航程——习近平法治思想引领新时代法治中国建设述评">思想之光照亮法治航程——习近平法治思想引领新时代法治中国建设述评</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drhd0641b74fc5399ec.html" target="_blank"
-                                title="桂林导游在第六届全国导游大赛中获英语组银牌">桂林导游在第六届全国导游大赛中获英语组银牌</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh0c7a0fed0aa69d47.html" target="_blank"
-                                title="七星区社山桥社区新时代文明实践站打造“智慧父母”">七星区社山桥社区新时代文明实践站打造“智慧父母”</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh544652cedbab6da4.html" target="_blank"
-                                title="学习·故事丨总书记回信里的誓词碑 让民族团结的佳话代代相传">学习·故事丨总书记回信里的誓词碑 让民族团结的佳话代代相传</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh71d744e910ea6fff.html" target="_blank"
-                                title="学习时节｜“久久为功推动粤港澳大湾区建设”">学习时节｜“久久为功推动粤港澳大湾区建设”</a></li>
-                        <li><a href="//news.guilinlife.com/article/5drh38c3041ed09220b9.html" target="_blank"
-                                title="天天学习｜“这就是好样的！”">天天学习｜“这就是好样的！”</a></li>
+                        {foreach $articles as $a}
+                        <li><a href="{$a.Url}" target="_blank" title="{$a.Title}">{$a.Title}</a>
+                        </li>
+                        {/foreach}
 
                     </ul>
                 </div>

@@ -174,3 +174,27 @@ array (
   3 => 'D:\\download\\project\\site\\ccwz\\zb_users\\cache\\compiled\\hzh_cwtst\\sidebar.php',
   4 => 8,
 )
+[2025-11-18 14:14:10 .34307300 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: articles',
+  3 => 'D:\\download\\project\\site\\ccwz\\zb_users\\cache\\compiled\\glxw_fang\\post-single.php',
+  4 => 878,
+)
+[2025-11-18 14:16:34 .17546900 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: articles',
+  3 => 'D:\\download\\project\\site\\ccwz\\zb_users\\cache\\compiled\\glxw_fang\\post-single.php',
+  4 => 878,
+)
+[2025-11-18 14:41:55 .91531400 +08:00] ERROR system 127.0.0.1
+array (
+  0 => 'E_NOTICE',
+  1 => 8,
+  2 => 'Undefined variable: a',
+  3 => 'D:\\download\\project\\site\\ccwz\\zb_users\\cache\\compiled\\glxw_fang\\post-single.php',
+  4 => 160,
+)

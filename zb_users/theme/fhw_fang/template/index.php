@@ -4,7 +4,7 @@
 
 <head>
 
-    {template:header3}
+    {template:header}
 </head>
 
 
@@ -12,7 +12,7 @@
     <div class="container" id="page">
         {template:header2}
 
-        {template:post-single}
+        {template:content}
 
         {template:footer}
     </div>

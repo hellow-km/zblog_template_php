@@ -4,7 +4,7 @@
 
 <head>
 
-    {template:header3}
+    {template:header}
 </head>
 
 
