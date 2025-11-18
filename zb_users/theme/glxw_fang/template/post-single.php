@@ -151,8 +151,6 @@
                                 </div>
                                 <div class="content-img">
 
-
-
                                 </div>
                                 <div class="content-other clearfix">
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
-<id>fhw_fang</id>
-<name>凤凰网仿https://me.ifeng.com/</name>
+<id>hlj_fang</id>
+<name>黑龙江https://www.hljnews.cn/</name>
 <url>index.php</url>
-<note>凤凰网仿</note>
+<note>黑龙江仿</note>
 <description></description>
 <path></path>
 <include></include>
