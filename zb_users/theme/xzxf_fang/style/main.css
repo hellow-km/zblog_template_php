@@ -1,0 +1,562 @@
+@charset "utf-8";
+@import url("paet.css");
+@import url("sp.css");
+@import url("tq.css");
+/*涓讳綋*/
+.w240 {
+    width: 240px;
+}
+.w360 {
+    width: 360px;
+}
+.w410 {
+    width: 410px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #eee;
+    border-right-color: #eee;
+    border-bottom-color: #eee;
+    border-left-color: #eee;
+}
+.w490 {
+    width: 490px;
+}
+.w571 {
+    width: 571px;
+}
+.w740 {
+    width: 740px;
+}
+.w1000 {
+    width: 1000px;
+}
+.w82 {
+    width: 82px;
+}
+.w102 {
+    width: 102px;
+}
+.h353 {
+    height: 353px;
+}
+.main_news {
+    color: #993333;
+    line-height: 16px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e7e7e7;
+    display: block;
+}
+.m_news_h1 {
+    font-size: 18px;
+    color: #333;
+    font-family: "寰蒋闆呴粦";
+    line-height: 18px;
+    font-weight: bold;
+}
+.m_news_ul1 a {
+    line-height: 33px;
+    color: #333;
+    display: inline-block;
+
+    *display: inline;
+    zoom: 1;
+}
+.title {
+    height: 37px;
+    border-bottom: 1px solid #006bb0;
+}
+.title a {
+    display: block;
+    background: #006bb0;
+    line-height: 37px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: "寰蒋闆呴粦";
+}
+.title a:hover {
+    text-decoration: none;
+}
+
+/*浠婃棩瑗胯棌*/
+.jrxz_com {
+    overflow: hidden;
+}
+.jrxz_com .tit {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-family: "寰蒋闆呴粦";
+    padding: 12px 0;
+    font-weight: bold;
+}
+.jrxz_com .tit:hover {
+    text-decoration: none;
+}
+.jrxz_com_con {
+    overflow: hidden;
+}
+.pic_wrap {
+    float: left;
+    position: relative;
+}
+.pic_wrap a,
+.pic_wrap a img {
+    display: block;
+    width: 170px;
+    height: 115px;
+}
+.pic_wrap .txt1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    background: #000;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 12px;
+    color: #fff;
+}
+.jrxz_com_con ul {
+    overflow: hidden;
+    float: right;
+    width: 310px;
+    margin-left: -10px;
+}
+.jrxz_com_con ul a {
+    color: #333;
+    line-height: 34px;
+    background: url(news_icon1.png) no-repeat left center;
+    padding-left: 13px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.banner {
+    display: block;
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+.banner_bg02 {
+    background: url(banner_bg02.jpg) no-repeat;
+}
+.title p.fz_16 {
+    font-size: 16px;
+}
+.news_wrap {
+    overflow: hidden;
+}
+.a1,
+.a1 img {
+    width: 131px;
+    height: 90px;
+    float: left;
+}
+.a2 {
+    float: left;
+    color: #333;
+    line-height: 24px;
+    margin-left: 11px;
+    width: 208px;
+    font-weight: bold;
+}
+.a3 {
+    float: left;
+    color: #666;
+    line-height: 26px;
+    margin-left: 11px;
+    width: 215px;
+    font-size: 12px;
+}
+.ul1 {
+    overflow: hidden;
+}
+.ul1 a {
+    font-size: 12px;
+    color: #333;
+    line-height: 34px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background: url(news_icon2.png) no-repeat left center;
+    padding-left: 7px;
+    margin-left: 2px;
+}
+.a4 {
+    color: #333;
+    line-height: 24px;
+    width: 226px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.ul2 {
+    overflow: hidden;
+    margin-top: 16px;
+}
+.ul2 li {
+    overflow: hidden;
+    width: 240px;
+    height: 34px;
+    *height: 31px;
+}
+.ul2 li span {
+    float: left;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: #b4b4b4;
+    border: 1px solid #b8b8b8;
+    color: #fff;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+.ul2 li span.cur {
+    border: 1px solid #1c79a9;
+    background: #1c79a9;
+}
+.ul2 li a {
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #333;
+    line-height: 34px;
+    max-width: 210px;
+    overflow: hidden;
+}
+.row {
+    height: 367px;
+    overflow: hidden;
+}
+.pos5 {
+    position: relative;
+}
+.pos5 a img {
+    width: 238px;
+    height: 367px;
+}
+.pos6 {
+    position: relative;
+    top: -367px;
+    left: 254px;
+}
+.pos6 a img,
+.pos7 a img,
+.pos10 a img,
+.pos11 a img,
+.pos12 a img {
+    width: 238px;
+    height: 110px;
+}
+.pos9 a img,
+.pos8 a img {
+    width: 238px;
+    height: 238px;
+}
+.pos7 {
+    position: relative;
+    top: -478px;
+    left: 508px;
+}
+.pos8 {
+    position: relative;
+    top: -587px;
+    left: 762px;
+}
+.pos9 {
+    position: relative;
+    top: -697px;
+    left: 254px;
+}
+.pos10 {
+    position: relative;
+    top: -935px;
+    left: 507px;
+}
+.pos11 {
+    position: relative;
+    top: -918px;
+    left: 508px;
+}
+.pos12 {
+    position: relative;
+    top: -1028px;
+    left: 762px;
+}
+.photo_title {
+    overflow: hidden;
+    width: 238px;
+    height: 367px;
+}
+.photo_title1 {
+    overflow: hidden;
+    width: 238px;
+    height: 110px;
+}
+.photo_title2 {
+    overflow: hidden;
+    width: 238px;
+    height: 238px;
+}
+.photo_title img,
+.photo_title1 img,
+.photo_title2 img {
+    position: absolute;
+}
+.photo_title a,
+.photo_title2 a p,
+.photo_title1 a p {
+    display: block;
+}
+.photo_title p {
+    position: absolute;
+    width: 238px;
+    text-align: center;
+    height: 31px;
+    background: black;
+    bottom: 0;
+    opacity: 0.56;
+    -moz-opacity: 0.56;
+    filter: alpha(opacity=56);
+    line-height: 31px;
+}
+.photo_title2 p {
+    position: absolute;
+    width: 238px;
+    text-align: center;
+    height: 31px;
+    background: black;
+    bottom: 0;
+    opacity: 0.56;
+    -moz-opacity: 0.56;
+    filter: alpha(opacity=56);
+    line-height: 31px;
+}
+.photo_title1 p {
+    position: absolute;
+    width: 238px;
+    text-align: center;
+    height: 31px;
+    background: black;
+    bottom: 0;
+    opacity: 0.56;
+    -moz-opacity: 0.56;
+    filter: alpha(opacity=56);
+    line-height: 31px;
+}
+.photo_title p a,
+.photo_title2 p a,
+.photo_title1 p a {
+    color: white;
+}
+/* 鐒︾偣鍥炬牱寮�*/
+
+/*鐒︾偣鍥�*/
+.focus {
+    position: relative;
+    width: 570px;
+    height: 353px;
+    background-color: #000;
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.daoht .wb {
+    float: right;
+    height: 70px;
+    width: 70px;
+    right: 60px;
+    position: absolute;
+    text-align: center;
+}
+
+.focus img {
+    width: 570px;
+    height: 353px;
+}
+.focus .shadow .title {
+    width: 260px;
+    height: 65px;
+    padding-left: 30px;
+}
+.focus .shadow .title a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.focus .btn {
+    position: absolute;
+    bottom: 34px;
+    left: 510px;
+    overflow: hidden;
+    zoom: 1;
+}
+.focus .btn a {
+    position: relative;
+    display: inline;
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    margin: 0 5px;
+    color: #b0b0b0;
+    font: 12px/15px "\5B8B\4F53";
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    float: left;
+    background: #d9d9d9;
+}
+.focus .btn a:hover,
+.focus .btn a.current {
+    cursor: pointer;
+    background: #fc114a;
+}
+.focus .fPic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.focus .D1fBt {
+    overflow: hidden;
+    zoom: 1;
+    height: 16px;
+    z-index: 10;
+}
+.focus .shadow {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    z-index: 10;
+    height: 35px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;
+    display: block;
+    text-align: left;
+}
+.focus .shadow a {
+    color: #fff;
+    font-size: 16px;
+    font-family: "寰蒋闆呴粦";
+    padding-left: 20px;
+}
+.box .box_z .toutiao #fsD1 #D1pic1 .fcon .shadow h2 {
+    text-align: left;
+    padding-top: 8px;
+}
+
+.focus .fcon {
+    position: relative;
+    width: 100%;
+    float: left;
+    display: none;
+    background: #000;
+}
+.focus .fcon img {
+    display: block;
+}
+.focus .fbg {
+    bottom: 8px;
+    right: 34px;
+    position: absolute;
+    height: 21px;
+    text-align: center;
+    z-index: 200;
+}
+.focus .fbg div {
+    margin: 4px auto 0;
+    overflow: hidden;
+    zoom: 1;
+    height: 14px;
+}
+.focus .D1fBt a {
+    position: relative;
+    display: inline;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    margin: 0 5px;
+    color: #b0b0b0;
+    font: 12px/15px "\5B8B\4F53";
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    float: left;
+    background: #d9d9d9;
+}
+.focus .D1fBt .current,
+.focus .D1fBt a:hover {
+    background: #fc114a;
+}
+.focus .D1fBt img {
+    display: none;
+}
+.focus .D1fBt i {
+    display: none;
+    font-style: normal;
+}
+.focus .prev,
+.focus .next {
+    position: absolute;
+    width: 40px;
+    height: 74px;
+    background: url(http://www.xzcmmat.cn/P020150727570806974644/zt-img/public/focus_btn.png)
+        no-repeat;
+}
+.focus .prev {
+    top: 313px;
+    margin-top: -37px;
+    left: 3px;
+    background-position: 0 -74px;
+    cursor: pointer;
+}
+.focus .next {
+    top: 327px;
+    margin-top: -37px;
+    right: -1px;
+    background-position: -40px -74px;
+    cursor: pointer;
+}
+.focus .prev:hover {
+    background-position: 0 0;
+}
+.focus .next:hover {
+    background-position: -40px 0;
+}
+#rmw_tuijian .cont_b_box ul li h1 {
+    margin-top: -4px;
+    font-size: 15px;
+}
+
+/* 鐒︾偣鍥炬牱寮忕粨鏉�*/
+/*涓讳綋缁撴潫*/
+
+.xwnr h3 {
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+    font-weight: normal;
+    padding-top: 3px;
+}
+
+/* 通用 clearfix */
+.clearfix::after {
+    content: "";
+    display: table; /* 或 block */
+    clear: both;
+}

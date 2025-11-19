@@ -1,0 +1,83 @@
+a:hover {
+    color: #f90;
+    text-decoration: underline;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.copyright20170320 {
+    height: 230px;
+    width: 100%;
+    background-color: #174a8b;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.copyright20170320 p a:link,
+.copyright20170320 p a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.copyright20170320 p a:hover,
+.copyright20170320 p a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+.copyright20170320 p {
+    width: 1050px;
+    height: 25px;
+    color: #fff;
+    padding-top: 5px;
+    text-align: center;
+}
+.copyright20170320 .nr p {
+    line-height: 25px;
+    text-align: center;
+}
+.copyright20170320 .nr {
+    height: 220px;
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding-top: 10px;
+}
+.copyright20170320 .nr .fb1 {
+    background-image: url(https://www.xzxw.com/resource/blue.png);
+    background-repeat: no-repeat;
+    height: 59px;
+    width: 80px;
+    position: absolute;
+    left: 210px;
+    top: 146px;
+}
+.copyright20170320 .nr .fb2 {
+    background-image: url(https://www.xzxw.com/resource/ahaha.jpg);
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    left: 319px;
+    top: 150px;
+}
+.copyright20170320 .nr .fb3 {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    left: 501px;
+    top: 150px;
+}
+.copyright20170320 .nr .fb4 {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    left: 683px;
+    top: 150px;
+}

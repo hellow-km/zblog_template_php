@@ -1,0 +1,1 @@
+<li><span>[{$i+1}]</span><a class="link-a" href="{$article.Url}" title="{$article.Title}">{$article.Title}</a></li>

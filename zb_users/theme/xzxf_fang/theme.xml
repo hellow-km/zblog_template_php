@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>xzxf_fang</id>
+<name>西藏新闻仿https://www.xzxw.com/xw/</name>
+<url>index.php</url>
+<note>西藏新闻仿</note>
+<description></description>
+<path></path>
+<include></include>
+<level>1</level>
+<author>
+  <name></name>
+  <email></email>
+  <url></url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>173430</adapted>
+<version>1.0</version>
+<pubdate>2025-11-19</pubdate>
+<modified>2025-11-19</modified>
+<price>10</price>
+<phpver>7.4</phpver>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <existsfunctions></existsfunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</theme>

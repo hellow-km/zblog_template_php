@@ -1,0 +1,166 @@
+.daoht {
+    height: 75px;
+    width: 1050px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(https://www.xzxw.com/resource/header_bg.jpg);
+    position: relative;
+    border-bottom: 1px solid #b6d3e1;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+.logo {
+    float: left;
+    height: 74px;
+    width: 256px;
+}
+.enter {
+    float: left;
+    position: absolute;
+    padding-top: 4px;
+    line-height: 44px;
+    left: 280px;
+}
+.hot_line {
+    margin-left: 3px;
+    font-size: 14px;
+    color: #333;
+    line-height: 15px;
+}
+.hot_line span {
+    margin-left: 8px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.rbkhd {
+    float: right;
+    height: 70px;
+    width: 70px;
+    right: 480px;
+    position: absolute;
+    text-align: center;
+}
+.shuzb {
+    float: right;
+    height: 70px;
+    width: 70px;
+    right: 400px;
+    position: absolute;
+    text-align: center;
+}
+.shuzb1 {
+    float: right;
+    height: 70px;
+    width: 70px;
+    right: 320px;
+    position: absolute;
+    text-align: center;
+}
+/*导航*/
+.nav_100 {
+    height: 45px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-color: #18599d;
+}
+.nav {
+    height: 45px;
+    width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+.nav ul li {
+    font-size: 15px;
+    line-height: 45px;
+    color: #fff;
+    float: left;
+    height: 45px;
+    margin-left: 44px;
+}
+.nav ul li a:link,
+.nav ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-family: "微软雅黑";
+}
+.nav ul li a:hover {
+    color: #c00;
+    text-decoration: none;
+}
+.linel {
+    background-color: #dedddd;
+    height: 1px;
+    width: 1050px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.daoht .wb {
+    float: right;
+    height: 70px;
+    width: 70px;
+    right: 240px;
+    position: absolute;
+    text-align: center;
+}
+/*搜索框*/
+.info_search {
+    margin-top: 10px;
+    position: absolute;
+    *margin-top: 25px;
+    overflow: hidden;
+    left: 840px;
+    top: -6px;
+    width: 216px;
+}
+.info_search input {
+    width: 210px;
+    height: 40px;
+    line-height: 40px !important;
+    line-height: 40px\0;
+    color: #666;
+    padding-left: 0px;
+    border: 1px solid #429adc;
+    outline: none;
+}
+.info_search_logo {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(https://www.xzxw.com/resource/search_logo.png) no-repeat;
+    *top: 9px;
+    cursor: pointer;
+}
+.search_cc {
+    float: right;
+    height: 50px;
+    width: 210px;
+}
+.source .s .w {
+    font-weight: normal;
+}
+
+.xinwendaoht {
+    height: 95px;
+    width: 1070px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+.ul2 li a {
+    font-size: 14px;
+}
+.ul1 a {
+    font-size: 14px;
+}
+.toptool ul a {
+    margin-right: 18px;
+    background-color: #ffffff;
+}
+.source .s .w {
+    font-weight: normal;
+}
