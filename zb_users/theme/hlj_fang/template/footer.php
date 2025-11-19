@@ -68,3 +68,194 @@
     <a href="http://www.beian.gov.cn/portal/registerSystemInfo">黑公网安备23010202010023号 </a>
     <a href="#">广播电视节目制作经营许可证（黑）字第00358号</a>
 </div>
+
+<script>
+// var swiper2 = new Swiper('.swiper-container-tow',{
+//     mode : 'vertical',
+//     autoplay: 5000,
+//     loop: true,
+// })
+
+var bannerIndex = 0
+var bannerCount = $('.swiper-container .swiper-wrapper .swiper-slide').length;
+
+function change(index) {
+    $('.title li').eq(index).addClass('active').siblings().removeClass('active')
+    $('.swiper-container .swiper-wrapper .swiper-slide').removeClass('active').eq(index).addClass('active');
+    bannerIndex = index
+}
+change(0);
+setInterval(function() {
+    if (bannerIndex < bannerCount - 1) {
+        bannerIndex++
+        change(bannerIndex);
+    } else {
+        change(0)
+    }
+}, 5000);
+
+$('.title li').on('mouseenter', function() {
+    $(this).addClass('active').siblings().removeClass('active')
+    let index = $(this).index();
+    $('.swiper-container .swiper-wrapper .swiper-slide').removeClass('active').eq(index).addClass('active');
+    bannerIndex = index
+})
+
+// let swiperone = new Swiper('.swiper-one',{
+//     loop:true,
+//     pagination: '.swiper-pagination',
+// })
+let swipertwo = new Swiper('.swiper-two', {
+    loop: true,
+    pagination: '.swiper-pagination',
+})
+let swiperthree = new Swiper('.swiper-three', {
+    loop: true,
+    pagination: '.swiper-pagination',
+})
+
+// let swiperbottom = new Swiper('.swiper-bottom',{
+//     loop:true,
+//     autoplay:5000,
+// })
+// 滚动字幕
+// var dome=document.getElementById("dome"); 
+// var dome1=document.getElementById("dome1"); 
+// var dome2=document.getElementById("dome2"); 
+// var speed=50;//设置向上轮动的速度 
+// dome2.innerHTML=dome1.innerHTML;//复制节点 
+// function moveTop(){ 
+//     if(dome1.offsetHeight-dome.scrollTop<=0){ 
+//         dome.scrollTop=0; 
+//     }else{ 
+//         dome.scrollTop++; 
+//     } 
+// } 
+// var myFunction=setInterval("moveTop()",speed); 
+// dome.onmouseover=function(){ 
+//     clearInterval(myFunction); 
+// } 
+// dome.onmouseout=function(){ 
+//     myFunction=setInterval(moveTop,speed); 
+// } 
+
+// var scroll0 = document.getElementById('scroll0')
+// var scroll1 = document.getElementById('scroll1');
+// var scroll2 = document.getElementById('scroll2');
+// var speed = 30;
+// scroll2.innerHTML = scroll1.innerHTML;
+// function moveRight(){
+//     if(scroll1.offsetWidth-scroll0.scrollLeft<=0){
+//         scroll0.scrollLeft=0
+//     }else{
+//         scroll0.scrollLeft++
+//     }
+// }
+// var myScroll = setInterval("moveRight()",speed);
+// scroll0.onmouseover = function(){
+//     clearInterval(myScroll);
+// }
+// scroll0.onmouseout=function(){ 
+//     myScroll=setInterval(moveRight,speed);
+// }
+
+// var live1,live2;
+// 
+//     
+// 
+
+// 
+//     
+// 
+
+
+// var player = new TcPlayer('live', {
+//     "rtmp": "rtmp://rtmpdist-w11.quklive.com/live/1605703232478972", //请替换成实际可用的播放地址
+//     "autoplay" : true,      //iOS 下 safari 浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+//     "poster" : "http://www.test.com/myimage.jpg",
+//     "width" :  '338',//视频的显示宽度，请尽量使用视频分辨率宽度
+//     "height" : '190'//视频的显示高度，请尽量使用视频分辨率高度
+// });
+// if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry|iPad/i.test(navigator.userAgent)){
+//     let imgobj = document.createElement('img')
+//     imgobj.src = 'resource/img/poster.jpg'
+//     document.getElementById('live-top').appendChild(imgobj)
+//     document.getElementById('live-top').addEventListener('click',function(){
+//         window.open(live1)
+//     })
+// }else{
+// var player_tow = new TcPlayer('live-top',{
+//     // "rtmp": "rtmp://rtmpdist-w11.quklive.com/live/1605703232478972", //请替换成实际可用的播放地址
+//     // "m3u8":live1,
+//     "m3u8":live1,
+//     "rtmp":live2,
+//     "autoplay" : false,      //iOS 下 safari 浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+//     "poster" : {"style": "cover", "src": "https://www.hljnews.cn/resource/img/poster.jpg"},
+//     "width" :  '294',//视频的显示宽度，请尽量使用视频分辨率宽度
+//     "height" : '161'//视频的显示高度，请尽量使用视频分辨率高度
+// })
+// }
+
+//搜索功能
+$('.searchButton').click(function() {
+    if ($('.searchBox').val() != "") {
+        window.open("http://search.hljnews.cn:8088/founder/SearchServlet.do?q=" + encodeURI($('.searchBox')
+            .val()));
+    }
+});
+$('.searchBox').keydown(function(e) {
+    if (e.keyCode == 13 && $(this).val() != "") {
+        window.open("http://search.hljnews.cn:8088/founder/SearchServlet.do?q=" + encodeURI($('.searchBox')
+            .val()));
+    }
+});
+$('.searchBox').focus(function() {
+    if ($(this).val() == "搜索") {
+        $(this).val("");
+    }
+});
+$('.searchBox').blur(function() {
+    if ($(this).val() == "") {
+        $(this).val("搜索");
+    }
+});
+
+//专题集切换
+var changeIndex = 1;
+$('.zhuantiji5 a').on('click', function() {
+    if (changeIndex % 2 != 0) {
+        $(this).parent().prev().prev().hide();
+        $(this).parent().prev().fadeIn(300);
+
+        changeIndex--;
+    } else {
+        $(this).parent().prev().hide();
+        $(this).parent().prev().prev().fadeIn(300);
+        changeIndex++;
+    }
+    return false;
+});
+setInterval("$('.zhuantiji5 a').click();", 8000);
+
+//轮播图下方最新新闻滚动效果
+var i = $('#scroll1').offset().left;
+var j = i;
+
+function sl() {
+    if (i - j > $('#scroll1 a:eq(0)').width()) {
+        $('#scroll1 a:eq(0)').appendTo($('#scroll1'));
+        j = i;
+    }
+    j--;
+    $('#scroll1').offset({
+        left: j
+    });
+}
+scrolling = setInterval(sl, 20);
+
+$('#scroll1').hover(function() {
+    clearInterval(scrolling)
+}, function() {
+    scrolling = setInterval(sl, 20);
+});
+</script>
