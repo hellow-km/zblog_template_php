@@ -111,12 +111,13 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
 
 <div class="xwnr">
     {foreach $allCategories as $i=>$cate}
-    {if $i<=7} <li style="width:490px;height:330px;float:left">
+    {if $i<=7} <li style="width:500px;height:330px;float:left">
         <div
-            style="background-color: #006dc0;width:120px;height:30px;display:flex;align-items:center;justify-content:center">
+            style="background-color: #006dc0;width:120px;height:30px;display:flex;align-items:center;justify-content:center;">
             <a href="{$cate.Url}"><span style="color: #fff;font-weight:600">{$cate.Name}</span></a>
         </div>
-        <div style="padding:10px 0">
+        <div style="border-bottom:2px solid #006DC0;margin-right:20px"></div>
+        <div style="padding:10px 10px 10px 0">
 
             {php}
             $cateId = $cate->ID;

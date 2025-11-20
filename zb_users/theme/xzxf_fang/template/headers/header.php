@@ -96,13 +96,13 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
 </div>
 <div class="nav9">
     <ul>
-        <li><a href="/">
-                <font color="#fff">首页</font>
+        <li><a href="/" class="{if !$category}cur{/if}">
+                <font color="{if !$category}#006dc0{else}#fff{/if}">首页</font>
             </a></li>
         {foreach $allCategories as $cate}
         <li>
-            <a target="_self" href="/?cate={$cate.ID}">
-                <font color="#fff">{$cate.Name}</font>
+            <a target="_self" class="{if $category&&$category.ID==$cate.ID}cur{/if}" href="/?cate={$cate.ID}">
+                <font color="{if $category&&$category.ID==$cate.ID}#006dc0{else}#fff{/if}">{$cate.Name}</font>
             </a>
         </li>
         {/foreach}

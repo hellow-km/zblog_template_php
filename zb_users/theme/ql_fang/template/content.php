@@ -525,3 +525,50 @@
         </div>
     </div>
 </div>
+
+<script>
+$(function() {
+    $(".section1 .col-a-right .pic-text li").css("display", "none");
+    $(".section1 .col-a-right .pic-text li:first").css("display", "block");
+
+    function funcTab() {
+        if ($(".section1 .col-a-right li:visible").index() != 3) {
+            $(".section1 .col-a-right li:visible").css("display", "none").next().css("display", "block");
+            $(".section1 .col-a-right li:visible").siblings().css("display", "none");
+            tab = $(".section1 .col-a-right li:visible").index();
+            //alert(tab);
+            $(".section1 .col-a-right .pagination span").removeClass("active-switch");
+            $(".section1 .col-a-right .pagination span").eq(tab).addClass("active-switch");
+        } else {
+            $(".section1 .col-a-right .pic-text li").css("display", "none");
+            $(".section1 .col-a-right .pic-text li:first").css("display", "block");
+            $(".section1 .col-a-right .pagination span").removeClass("active-switch");
+            $(".section1 .col-a-right .pagination span").eq(0).addClass("active-switch");
+        }
+    }
+
+    timer = setInterval(function() {
+        funcTab();
+    }, 3000);
+
+    $(".section1 .col-a-right .pic-text li").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() {
+            funcTab();
+        }, 3000);
+    })
+
+    $(".section1 .col-a-right .pagination span").click(function() {
+        clearInterval(timer);
+        $(".section1 .col-a-right .pagination span").removeClass("active-switch");
+        $(this).addClass("active-switch");
+        var pageNum = $(this).index();
+        $(".section1 .col-a-right .pic-text li").css("display", "none");
+        $(".section1 .col-a-right li").eq(pageNum).css("display", "block");
+        timer = setInterval(function() {
+            funcTab();
+        }, 3000);
+    })
+})
+</script>

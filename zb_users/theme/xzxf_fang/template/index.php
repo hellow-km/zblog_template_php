@@ -10,6 +10,7 @@
     {if $pathname == "/"}
     {template:header_links/header}
     {else}
+    {template:header_links/header}
     {template:header_links/header3}
     {/if}
 
@@ -158,7 +159,7 @@ break;
         {template:content}
         {template:footer}
         {else}
-        {template:headers/header2}
+        {template:headers/header}
         {template:news/index}
         {template:news/footer}
         {/if}

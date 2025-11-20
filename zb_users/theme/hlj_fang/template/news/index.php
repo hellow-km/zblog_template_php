@@ -1,21 +1,23 @@
 {* Template Name:首页及列表页 *}
-<div class="route"><a href="/">黑龙江新闻网</a> &gt;&gt; <a onclick="location.reload()">{$breadName}</a>
+<div class="route"><a href="/">黑龙江新闻网</a> &gt;&gt; <a href="{$category.Url}">{$category.Name}</a>
 </div>
 
 <div class="content">
     <div class="list-box">
+        {if $articles&&$articles[0]}
         <div class="banner swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper" id="swiper-wrapper-fea27b10d69b4ce77" aria-live="polite"
                 style="transform: translate3d(0px, 0px, 0px);">
-
-                <a href="location.reload()">
+                {foreach $articles as $i=>$a}
+                {if $i<=5} <a href="{$a.Url}">
                     <div class="swiper-slide">
                         <img src="/images/hlj_content.jpg" alt="">
-                        <div class="name">大庆打造“无废油城” 多项指标领跑全省 </div>
+                        <div class="name">{$a.Title}</div>
                     </div>
-                </a>
-
-                <!-- <div class="swiper-slide">
+                    </a>
+                    {/if}
+                    {/foreach}
+                    <!-- <div class="swiper-slide">
                         <img src="/resource/data/banner1.jpg" alt="">
                         <div class="name">中国电影 :走在高质量发展的大陆上</div>
                     </div>
@@ -27,6 +29,7 @@
             <div class="swiper-pagination swiper-pagination-bullets"></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
         </div>
+        {/if}
         <div class="news-box">
             {foreach $articles as $a}
             <a href="{$a.Url}">

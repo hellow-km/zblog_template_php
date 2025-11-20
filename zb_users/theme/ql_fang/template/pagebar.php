@@ -4,13 +4,13 @@
 
 
             {if isset($pagebar.buttons['‹'])}
-            <li><a class="prev" title="{$pagebar.buttons['‹']}" href="{$pagebar.buttons['‹']}">&lt;</a></li>
+            <li><a class="prev" title="{$pagebar.buttons['‹']}" href="{$pagebar.buttons['‹']}">上一页</a></li>
             {/if}
 
             {foreach $pagebar.buttons as $k=>$v}
             {if $k != "‹‹" && $k != "››" && $k != "›" && $k != "‹"}
             {if $pagebar.isFullLink==false && $pagebar.PageNow==$k}
-            <li class="row"><a title="{$k}" href="{$v}"><span>{$k}</span></a></li>
+            <li><a class="row" title="{$k}" href="{$v}"><span>{$k}</span></a></li>
             {else}
             <li><a title="{$k}" href="{$v}"><span>{$k}</span></a></li>
             {/if}
@@ -18,7 +18,7 @@
             {/foreach}
 
             {if isset($pagebar.buttons['›'])}
-            <li><a class="next" title="{$pagebar.buttons['›']}" href="{$pagebar.buttons['›']}">></a></li>
+            <li><a class="next" title="{$pagebar.buttons['›']}" href="{$pagebar.buttons['›']}">下一页</a></li>
             {/if}
 
 
