@@ -84,11 +84,9 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
     </script>
     <div class="search_cc">
         <div class="info_search">
-            <form id="search" name="search" action="https://search.xzxw.com/founder/SearchServlet.do" method="get"
-                target="_self">
-                <input type="text" name="content" id="Searchword" value="&nbsp;输入搜索内容"
-                    onfocus="javascript:{this.value='';}">
-                <input type="hidden" name="siteID" value="5">
+            <form id="search" name="search" method="post" action="{$host}zb_system/cmd.php?act=search" target="_self">
+                <input type="text" name="q" id="Searchword" value="&nbsp;输入搜索内容" onfocus="javascript:{this.value='';}">
+
             </form>
             <div class="info_search_logo" onclick="summitForm();"></div>
         </div>
