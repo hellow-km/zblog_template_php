@@ -11,13 +11,11 @@
                               <div class="list-content">
                                   <ul>
 
-                                      <li><a class="{if !$category}active{/if}" href="/" data-chname="homepage"
-                                              data-catid="0">推荐</a></li>
+                                      <li><a href="/" data-chname="homepage" data-catid="0">推荐</a></li>
 
                                       {foreach $allCategories as $cate}
                                       <li>
-                                          <a class="{if $category&&$category.ID==$cate.ID}active{/if}"
-                                              href="{$cate.Url}">
+                                          <a href="{$cate.Url}">
                                               {$cate.Name}
                                           </a>
                                       </li>

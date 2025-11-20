@@ -27,11 +27,11 @@
         </div>
         <div class="header-search fr">
             <div class="search-main clearfix">
-                <form name="search" id="searchNews">
+                <form name="search" id="searchNews" method="post" action="{$host}zb_system/cmd.php?act=search">
                     <div class="search-input">
                         <input type="text" placeholder="请输入关键字" autocomplete="off" id="searchword" name="q">
                     </div>
-                    <input class="search-btn" type="button" value="搜索" id="btnSearchSub">
+                    <input class="search-btn" type="submit" value="搜索" id="btnSearchSub">
                 </form>
             </div>
         </div>
