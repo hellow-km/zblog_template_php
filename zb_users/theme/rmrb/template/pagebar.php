@@ -32,7 +32,7 @@
     $pagenow = $pagebar->PageNow;
 
     // 总记录数
-    $total = $pagebar->PageAll;
+    $total = $pagebar->AllCount;
 
     // 计算开始条数和结束条数
     $start = ($pagenow - 1) * $pagesize + 1;
@@ -40,7 +40,7 @@
     {/php}
 
     <div class="summary" style="position: absolute;top:0;right:0">
-        第 <b>{$start}-{$end}</b> 条，共 <b>{$total}</b> 条数据.
+        第 <b>{$start}-{$end}</b> 条，共 <b>{$pagebar.AllCount}</b> 条数据.
     </div>
     {/if}
     {/if}

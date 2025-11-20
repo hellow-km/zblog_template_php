@@ -114,7 +114,7 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
     {if $i<=7} <li style="width:490px;height:330px;float:left">
         <div
             style="background-color: #006dc0;width:120px;height:30px;display:flex;align-items:center;justify-content:center">
-            <span style="color: #fff;font-weight:600">{$cate.Name}</span>
+            <a href="{$cate.Url}"><span style="color: #fff;font-weight:600">{$cate.Name}</span></a>
         </div>
         <div style="padding:10px 0">
 

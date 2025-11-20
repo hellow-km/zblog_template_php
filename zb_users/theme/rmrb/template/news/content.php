@@ -1,23 +1,3 @@
-{php}
-$cate = $zbp->GetCategoryByName($breadName);
-
-$articles = [];
-
-if ($cate && $cate->ID > 0) {
-
-$w = array(
-array('=', 'log_CateID', $cate->ID) // 修正: 必须是二维数组
-);
-
-$articles = $zbp->GetArticleList(
-'*',
-$w,
-array('log_PostTime' => 'DESC'),
-10,
-null
-);
-}
-{/php}
 <div class="white-con">
     <div class="dqwz">
         <span>当前位置：<a href="http://www.cwtstour.com/">主页</a> &gt; <a href="{$pathname}">{$breadName}</a> &gt; </span>
@@ -27,7 +7,8 @@ null
             {foreach $articles as $article}
             <li>
                 <div class="img">
-                    <a href="{$article.Url}" title="{$article.Title}"><img width="100%" src="/imgs/defaultpic.gif" alt="{$article.Title}"></a>
+                    <a href="{$article.Url}" title="{$article.Title}"><img width="100%" src="/imgs/defaultpic.gif"
+                            alt="{$article.Title}"></a>
                 </div>
                 <div class="desc">
                     <h2><a class="link-a" href="{$article.Url}" title="{$article.Title}">{$article.Title}</a></h2>

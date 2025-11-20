@@ -15,12 +15,12 @@
 <script src="{$host}zb_system/script/c_html_js_add.php?{if isset($html_js_hash)}hash={$html_js_hash}&{/if}v={$version}">
 </script>
 
-<script src="{$host}zb_users/theme/rmrb/script/utils.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/{$theme}/script/utils.js?v={$version}"></script>
 
-<script src="{$host}zb_users/theme/rmrb/script/2.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/3.js?v={$version}"></script>
-<script src="{$host}zb_users/theme/rmrb/script/4.js?v={$version}"></script>
-
+<script src="{$host}zb_users/theme/{$theme}/script/2.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/{$theme}/script/3.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/{$theme}/script/4.js?v={$version}"></script>
+<script src="{$host}zb_users/theme/{$theme}/script/1.js?v={$version}"></script>
 
 
 {$header}
