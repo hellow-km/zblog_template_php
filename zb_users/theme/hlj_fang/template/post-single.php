@@ -1,13 +1,15 @@
 <div class="content">
     <div class="list-box">
 
-        <div class="article-quote">青山为卷 步履为笔</div>
-        <div class="article-title">“龙江森调人”的四季歌</div>
+        <div class="article-quote">&nbsp;</div>
+        <div class="article-title">{$article.Title}</div>
         <div class="article-subtitle"></div>
         <div class="article-info">
-            <div class="time">2025年11月18日 10:14:49</div>
+            <div class="time">{$article.Time("Y年m月d日 h:m:s")}</div>
             <div class="from">来源：黑龙江日报</div>
-            <div class="writer">作者：唐海兵</div>
+            <div class="writer">作者：{if $article.Author}
+                {$article.Author.Name}
+                {/if}</div>
         </div>
         <div class="article-content">
             <!--enpcontent-->
