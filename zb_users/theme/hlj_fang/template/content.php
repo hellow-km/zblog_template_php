@@ -409,7 +409,7 @@
                 {/php}
 
 
-                <a href="/{$cate.Alias}" target="_self">
+                <a href="/?cate={$cate.ID}" target="_self">
                     <div class="title">
                         <div class="name">{$cate.Name}</div>
                         <div class="line">

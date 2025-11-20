@@ -8,10 +8,9 @@
             <div class="swiper-wrapper" id="swiper-wrapper-fea27b10d69b4ce77" aria-live="polite"
                 style="transform: translate3d(0px, 0px, 0px);">
 
-                <a href="https://www.hljnews.cn/ljxw/content/2025-11/04/content_867461.html">
+                <a href="location.reload()">
                     <div class="swiper-slide">
-                        <img src="https://www.hljnews.cn/ljxw/pic/2025-11/04/867461_t1_49X63X600X373_07d01475-08df-479f-9e98-27e20a954068.jpg"
-                            alt="">
+                        <img src="/images/hlj_content.jpg" alt="">
                         <div class="name">大庆打造“无废油城” 多项指标领跑全省 </div>
                     </div>
                 </a>

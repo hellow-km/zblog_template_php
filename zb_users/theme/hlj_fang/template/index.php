@@ -10,7 +10,7 @@
     {if $pathname == "/"}
     {template:header}
     {else}
-    {template:header}
+
     {template:header3}
     {/if}
 </head>
@@ -18,7 +18,7 @@
 
 <body>
     <div class="container" id="page">
-        {template:header2}
+
 
         {php}
         $breadName = "";
@@ -60,9 +60,53 @@
 
 
         {if $pathname == "/"}
+        {template:header2}
         {template:content}
         {template:footer}
+
+        <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // let imgs = document.getElementsByTagName("img")
+            // for (let i = 0; i < imgs.length; i++) {
+            //     const img = imgs[i];
+            //     img.src = "/images/wx150t.jpg"
+            // }
+            var swiper = new Swiper('.banner', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            })
+
+            //导航栏添加反色效果
+            $('.tab-menu a li').each(function(index, element) {
+                if (this.innerText == $('.route a')[1].text) {
+                    $(this).addClass('tab-menu-active')
+                }
+            });
+            var dome = document.getElementById("dome");
+            var dome1 = document.getElementById("dome1");
+            var dome2 = document.getElementById("dome2");
+            var speed = 50; //璁剧疆鍚戜笂杞姩鐨勯€熷害 
+            dome2.innerHTML = dome1.innerHTML; //澶嶅埗鑺傜偣 
+            function moveTop() {
+                if (dome1.offsetHeight - dome.scrollTop <= 0) {
+                    dome.scrollTop = 0;
+                } else {
+                    dome.scrollTop++;
+                }
+            }
+            var myFunction = setInterval("moveTop()", speed);
+            dome.onmouseover = function() {
+                clearInterval(myFunction);
+            }
+            dome.onmouseout = function() {
+                myFunction = setInterval(moveTop, speed);
+            }
+        })
+        </script>
         {else}
+        {template:header4}
         {template:news/index}
         <div class="bottom-bg">
             <ul class="bottom-box">
@@ -79,46 +123,6 @@
     </div>
 </body>
 
-<script>
-window.addEventListener("DOMContentLoaded", () => {
-    // let imgs = document.getElementsByTagName("img")
-    // for (let i = 0; i < imgs.length; i++) {
-    //     const img = imgs[i];
-    //     img.src = "/images/wx150t.jpg"
-    // }
-    var swiper = new Swiper('.banner', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    })
 
-    //导航栏添加反色效果
-    $('.tab-menu a li').each(function(index, element) {
-        if (this.innerText == $('.route a')[1].text) {
-            $(this).addClass('tab-menu-active')
-        }
-    });
-    var dome = document.getElementById("dome");
-    var dome1 = document.getElementById("dome1");
-    var dome2 = document.getElementById("dome2");
-    var speed = 50; //璁剧疆鍚戜笂杞姩鐨勯€熷害 
-    dome2.innerHTML = dome1.innerHTML; //澶嶅埗鑺傜偣 
-    function moveTop() {
-        if (dome1.offsetHeight - dome.scrollTop <= 0) {
-            dome.scrollTop = 0;
-        } else {
-            dome.scrollTop++;
-        }
-    }
-    var myFunction = setInterval("moveTop()", speed);
-    dome.onmouseover = function() {
-        clearInterval(myFunction);
-    }
-    dome.onmouseout = function() {
-        myFunction = setInterval(moveTop, speed);
-    }
-})
-</script>
 
 </html>

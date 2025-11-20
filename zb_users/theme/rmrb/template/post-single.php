@@ -50,8 +50,7 @@
             <div id="w0" class="comBox">
                 <h4><a href="#">微信：SouthReviews</a></h4>
                 <div class="content">
-                    <img src="/assets/fba50f49/images/wx150t.jpg" alt="微信：SouthReviews"
-                        rel="/assets/fba50f49/images/wx150.jpg">
+                    <img src="/images/wx150t.jpg" alt="微信：SouthReviews" rel="/images/wx150.jpg">
                 </div>
             </div>
         </div>

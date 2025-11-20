@@ -31,6 +31,29 @@
                         </li>
                         {/foreach}
                     </ul>
+                    <ul class="tab tab_quarter_view" style="display: block;">
+
+                        {php}
+                        $hotInCate = array();
+                        if( $category){ // 判断对象存在
+                        $cateId = $category->ID;
+                        $hotInCate = GetList(
+                        10,
+                        $cateId,
+                        null,
+                        null,
+                        null,
+                        array('log_ViewCount' => 'DESC')
+                        );
+                        }else{
+                        $hotInCate=$articles;
+                        }
+                        {/php}
+                        {foreach $hotInCate as $a}
+                        <li><a href="{$a.Url}" title="标题：{$a.Title}, 时间：{$a.Time('Y-m-d')}">{$a.Title}</a>
+                        </li>
+                        {/foreach}
+                    </ul>
                     <div class="tabsNav">
                         <a href="javascript:void(0);" rel="tab_month_view" title="月点击" class="current">月点击</a>&nbsp;
                         <a href="javascript:void(0);" rel="tab_quarter_view" title="季点击">季点击</a>&nbsp;

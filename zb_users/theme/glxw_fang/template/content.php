@@ -7,15 +7,18 @@
                         <div class="list-content">
                             <ul>
                                 {php}
-                                // 获取所有分类
-                                $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
+                                $allCategories = $zbp->GetCategoryList(); // 获取所有分类
                                 {/php}
 
+                                <li><a class="{if !$category}active{/if}" href="/" data-chname="homepage"
+                                        data-catid="0">推荐</a></li>
 
-                                <li><a href="/" data-chname="homepage" data-catid="0">推荐</a></li>
                                 {foreach $allCategories as $cate}
-                                <li><a href="{$cate.Url}">{$cate.Name}</a></li>
-
+                                <li>
+                                    <a class="{if $category&&$category.ID==$cate.ID}active{/if}" href="{$cate.Url}">
+                                        {$cate.Name}
+                                    </a>
+                                </li>
                                 {/foreach}
                             </ul>
                         </div>
