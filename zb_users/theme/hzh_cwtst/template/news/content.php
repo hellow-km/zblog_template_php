@@ -1,6 +1,7 @@
 <div class="white-con">
     <div class="dqwz">
-        <span>当前位置：<a href="http://www.cwtstour.com/">主页</a> &gt; <a href="{$pathname}">{$category.Name}</a> &gt;
+        <span>当前位置：<a href="http://www.cwtstour.com/">主页</a> &gt; <a href="{$pathname}">
+                {if isset($category)&&$category}{$category.Name}{/if}</a> &gt;
         </span>
     </div>
     <div class="list-doc">

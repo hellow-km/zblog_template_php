@@ -22,7 +22,7 @@ null
 <div class="index-white-bg">
     <div class="index-head">
         <h2>{$cat->Name}</h2>
-        <span class="index-head-more"><a class="link-a" href="/{$cat->Alias}">更多&gt;&gt;</a></span>
+        <span class="index-head-more"><a class="link-a" href="{$cat.Url}">更多&gt;&gt;</a></span>
     </div>
     <div class="index-img-more">
         <ul>
