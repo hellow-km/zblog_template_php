@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
 <id>rmrb</id>
-<name>南风窗仿https://www.nfcmag.com/</name>
+<name>南风窗仿</name>
 <url>index.php</url>
-<note>南风窗仿https://www.nfcmag.com/</note>
+<note>南风窗仿</note>
 <description></description>
 <path></path>
 <include></include>
 <level>1</level>
 <author>
-  <name></name>
+  <name>https://www.nfcmag.com/</name>
   <email></email>
   <url></url>
 </author>

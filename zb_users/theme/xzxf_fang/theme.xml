@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
 <id>xzxf_fang</id>
-<name>西藏新闻仿https://www.xzxw.com/xw/</name>
+<name>西藏新闻仿</name>
 <url>index.php</url>
 <note>西藏新闻仿</note>
 <description></description>
@@ -9,7 +9,7 @@
 <include></include>
 <level>1</level>
 <author>
-  <name></name>
+  <name>https://www.xzxw.com/xw/</name>
   <email></email>
   <url></url>
 </author>

@@ -39,8 +39,7 @@
         <div class="col-a-right fl">
             <ul class="pic-text">
                 <li style="display: none;">
-                    <a href="https://sdxw.iqilu.com/w/article/YS0yMS0xNjg4MTQxNg.html"
-                        title="“鸳鸯锅 潮汐树 红地毯” 360度全景飞行看遍黄河口" target="_self" class="palybox">
+                    <a href="/" title="“鸳鸯锅 潮汐树 红地毯” 360度全景飞行看遍黄河口" target="_self" class="palybox">
                         <img src="https://img11.iqilu.com/21/2025/11/18/5f58156d5c3944ae8138fba98b790f11.png" alt="">
                         <img src="https://file.iqilu.com/custom/new/v2019/shouye/images/icon-play.png" alt=""
                             class="paly_btn">
@@ -48,8 +47,7 @@
                     </a>
                 </li>
                 <li style="display: none;">
-                    <a href="https://news.iqilu.com/shandong/yuanchuang/2025/1118/5868885.shtml"
-                        title="济南芦南村：从“瘌痢头”到“网红村”的绿色逆袭" target="_self" class="palybox">
+                    <a href="/" title="济南芦南村：从“瘌痢头”到“网红村”的绿色逆袭" target="_self" class="palybox">
                         <img src="https://img11.iqilu.com/21/2025/11/18/ab9074f6c6aa437c8c68a8a9947961b3.png" alt="">
                         <img src="https://file.iqilu.com/custom/new/v2019/shouye/images/icon-play.png" alt=""
                             class="paly_btn">
@@ -57,8 +55,7 @@
                     </a>
                 </li>
                 <li style="display: none;">
-                    <a href="https://sdxw.iqilu.com/w/article/YS0yMS0xNjg4MjM0Ng.html" title="双向奔赴的信任！这座城市把观鸟体验做到极致"
-                        target="_self" class="palybox">
+                    <a href="/" title="双向奔赴的信任！这座城市把观鸟体验做到极致" target="_self" class="palybox">
                         <img src="https://img11.iqilu.com/21/2025/11/18/978255e4a8f7433382df36529814fed8.png" alt="">
                         <img src="https://file.iqilu.com/custom/new/v2019/shouye/images/icon-play.png" alt=""
                             class="paly_btn">
@@ -66,8 +63,7 @@
                     </a>
                 </li>
                 <li style="display: block;">
-                    <a href="https://sdxw.iqilu.com/w/article/YS0yMS0xNjg4MjM1MA.html" title="山东有多美丨初冬藏暖意 崮云湖上流光驻"
-                        target="_self" class="palybox">
+                    <a href="/" title="山东有多美丨初冬藏暖意 崮云湖上流光驻" target="_self" class="palybox">
                         <img src="https://img11.iqilu.com/21/2025/11/18/b6fd514b9568499ca796eeb2fe0e2b95.png" alt="">
                         <img src="https://file.iqilu.com/custom/new/v2019/shouye/images/icon-play.png" alt=""
                             class="paly_btn">

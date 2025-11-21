@@ -20,6 +20,13 @@
 
 <script>
 jQuery(function($) {
+
+    var as = document.getElementsByTagName("a")
+    for (let i = 0; i < as.length; i++) {
+        if (as[i].href.indexOf(location.host) == -1) {
+            javascript:void(0)
+        }
+    }
     NFCHelper.setMenuCurrentCategory(10);
 
     function wxShow(nodeId) {

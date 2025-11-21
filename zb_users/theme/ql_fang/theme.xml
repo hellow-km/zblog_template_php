@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
 <id>ql_fang</id>
-<name>齐鲁仿https://news.iqilu.com/</name>
+<name>齐鲁仿</name>
 <url>index.php</url>
 <note>齐鲁仿</note>
 <description></description>
@@ -9,7 +9,7 @@
 <include></include>
 <level>1</level>
 <author>
-  <name></name>
+  <name>https://news.iqilu.com/</name>
   <email></email>
   <url></url>
 </author>

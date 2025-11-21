@@ -1,12 +1,10 @@
-
-
 {php}
 $cateName = "";
 
 if ($breadName) {
-    $cateName = $breadName;
-} else if ($article && $article->Category) {
-    $cateName = $article->Category->Name;
+$cateName = $breadName;
+} else if (isset($article)&& $article->Category) {
+$cateName = $article->Category->Name;
 }
 
 $cate = $zbp->GetCategoryByName($cateName);
@@ -38,8 +36,7 @@ null
         {foreach $articles as $i=>$a}
         <li>
             <span class="nums">{$i+1}</span>
-            <h2><a class="link-a" href="{$a.Url}"
-                    title="{$a.Title}">{$a.Title}</a>
+            <h2><a class="link-a" href="{$a.Url}" title="{$a.Title}">{$a.Title}</a>
             </h2>
         </li>
         {/foreach}

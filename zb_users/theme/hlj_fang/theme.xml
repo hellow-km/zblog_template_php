@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
 <id>hlj_fang</id>
-<name>黑龙江https://www.hljnews.cn/</name>
+<name>黑龙江</name>
 <url>index.php</url>
 <note>黑龙江仿</note>
 <description></description>
@@ -9,7 +9,7 @@
 <include></include>
 <level>1</level>
 <author>
-  <name></name>
+  <name>https://www.hljnews.cn/</name>
   <email></email>
   <url></url>
 </author>

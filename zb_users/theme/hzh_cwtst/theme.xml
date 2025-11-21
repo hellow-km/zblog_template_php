@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <theme version="php">
 <id>hzh_cwtst</id>
-<name>仿站https://cwtstour.com/</name>
+<name>仿站</name>
 <url>index.php</url>
 <note></note>
 <description></description>
@@ -9,7 +9,7 @@
 <include></include>
 <level>1</level>
 <author>
-  <name>hzh</name>
+  <name>https://cwtstour.com/</name>
   <email></email>
   <url></url>
 </author>

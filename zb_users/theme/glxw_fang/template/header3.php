@@ -9,6 +9,8 @@
 <link rel="stylesheet" rev="stylesheet"
     href="{$host}zb_users/theme/{$theme}/style/single/1.css?{$themeinfo['modified']}" type="text/css" media="all" />
 
+<script src="{$host}zb_users/theme/{$theme}/script/1.js?v={$version}"></script>
+
 <script src="{$host}zb_users/theme/rmrb/script/single/1.js?v={$version}"></script>
 
 <script src="{$host}zb_system/script/zblogphp.js?v={$version}"></script>

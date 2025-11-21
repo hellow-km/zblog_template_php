@@ -11,7 +11,9 @@
         <ul class="m_news_ul1">
             {foreach $articles as $i=>$a}
             {if $i>0}
-            <li style="line-height:36px"><a href="{$a.Url}" title="{$a.Title}" target="_self">{$a.Title}</a>
+            <li style="line-height:36px;    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;"><a href="{$a.Url}" title="{$a.Title}" target="_self">{$a.Title}</a>
             </li>
             {/if}
             {/foreach}
@@ -74,6 +76,7 @@
                     <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>
                     <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>
                     <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>5</i></a>
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>6</i></a>
                 </div>
             </div>
         </div>
@@ -136,7 +139,8 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
             {/php}
             {if $articles&&$articles[0]}
             <div style="display:flex;height:150px;overflow:hidden">
-                <div style="min-width:200px;max-width:200px"><img src="" width="100%" height="100%" alt=""></div>
+                <div style="min-width:200px;max-width:200px"><img src="/images/default.jpg" width="100%" height="100%"
+                        alt=""></div>
                 <div style="margin-left:10px"><a href="{$articles[0].Url}">
                         <h2>{$articles[0].Title}</h2>
                         <h5>{$articles[0].Intro}</h5>
@@ -144,10 +148,12 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
 
             </div>
             {/if}
-            {foreach $articles as $a}
+            {foreach $articles as $i=>$a}
+            {if $i>0}
             <div style="font-size: 15px;line-height: 33px;overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;padding-right:15px"><a href="{$a.Url}">{$a.Title}</a></div>
+            {/if}
             {/foreach}
         </div>
         </li>
@@ -157,7 +163,7 @@ $allCategories = $zbp->GetCategoryList(); // 返回所有分类对象数组
 </div>
 
 
-<div class="tpxw20180903"><a href="https://www.xzxw.com/xw/xwtp/" target="_self"><img
+<div class="tpxw20180903"><a href="/" target="_self"><img
             src="//www.xzxw.com/resource/templateRes/202304/20/51/51/2018gaibanxwtp.jpg" border="0"></a>
     <div class="pic1"><a href="https://www.xzxw.com/xw/xwtp/2025-11/18/content_6729397.html" target="_self"><img
                 src="https://www.xzxw.com/pic/2025-11/18/6729397_1d1e779e-ea33-433f-8eb0-5f47b7c9b3c4.jpg" width="320"
